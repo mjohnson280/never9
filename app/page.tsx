@@ -28,6 +28,11 @@ const pageCopy = {
       'AI-assisted development changes that equation. Focused applications are now feasible at a speed and cost profile that was not practical even a few years ago.',
     ],
   },
+  nameStory: {
+    badge: 'What Does Never9 Mean?',
+    cta: 'Read the origin story',
+    href: '/what-does-never9-mean',
+  },
   approach: {
     title: 'Build in partnership with the people doing the work',
     steps: [
@@ -135,7 +140,7 @@ export default function Page() {
               {pageCopy.hero.primaryCta}
             </a>
             <a
-              href="#approach"
+              href="/how-we-work"
               className="rounded-full border border-ink/15 bg-white/85 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/30"
             >
               {pageCopy.hero.secondaryCta}
@@ -172,6 +177,18 @@ export default function Page() {
             </p>
           ))}
         </div>
+      </section>
+
+      <section className="mt-10 flex justify-center">
+        <a
+          href={pageCopy.nameStory.href}
+          className="inline-flex items-center gap-3 rounded-full border border-ink/15 bg-white/85 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/35"
+        >
+          <span className="text-xs uppercase tracking-[0.2em] text-ink/60">
+            {pageCopy.nameStory.badge}
+          </span>
+          <span className="text-ember">{pageCopy.nameStory.cta}</span>
+        </a>
       </section>
 
       <section id="approach" className="mt-20">
