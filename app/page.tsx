@@ -5,25 +5,25 @@ const pageCopy = {
     cta: 'Start a Conversation',
   },
   hero: {
-    title: 'Custom Software For The Work SaaS Was Never Built To Handle',
+    title: 'Custom Software Where SaaS Falls Short',
     body: 'Never9 is a rapid development house that partners directly with end users to design and launch workflow-specific applications, giving companies a practical alternative to off-the-shelf SaaS and the leverage of an embedded product team.',
     primaryCta: 'Start a Conversation',
     secondaryCta: 'See How We Work',
     supportLine:
-      'Workflow-specific applications | built with end users | faster than traditional development',
+      'Workflow-specific applications | built with end users as partners | End user ownership and upside',
   },
   coreFocus: {
     title: 'Core Focus',
     items: [
       { label: 'Buyer Profile', value: 'Operators and functional leaders' },
-      { label: 'Pain Pattern', value: 'Manual workarounds around software gaps' },
-      { label: 'Delivery Objective', value: 'Useful systems shipped quickly' },
+      { label: 'Pain Pattern', value: 'Application solutions for software and efficiency gaps' },
+      { label: 'Delivery Objective', value: 'Useful systems built as partners' },
     ],
   },
   problem: {
-    title: 'Most teams are still choosing between bad-fit software and slow custom builds.',
+    title: 'Most teams are still choosing between bad-fit software and custom builds.',
     points: [
-      'Generic software often forces awkward workarounds that make operations slower, less visible, and harder to improve.',
+      'Start ups were hamstrung by engineers and VC dollarsGeneric software often forces awkward workarounds that make operations slower, less visible, and harder to improve.',
       'Spreadsheets and manual handoffs accumulate around system gaps, while traditional custom development has historically been too expensive or too slow for many teams.',
       'AI-assisted development changes that equation. Focused applications are now feasible at a speed and cost profile that was not practical even a few years ago.',
     ],
@@ -32,12 +32,8 @@ const pageCopy = {
     title: 'Build in partnership with the people doing the work',
     steps: [
       {
-        title: 'Find the repeated pain point',
-        body: 'Identify the workflow friction that is costing time, margin, or reliability.',
-      },
-      {
-        title: 'Work with end users and stakeholders',
-        body: 'Map the real process with the people who execute it every day.',
+        title: 'Find the repeated pain point with stakeholders',
+        body: 'Identify the workflow friction with the people who execcute it every day.',
       },
       {
         title: 'Build around the actual workflow',
@@ -46,6 +42,10 @@ const pageCopy = {
       {
         title: 'Iterate quickly from live usage',
         body: 'Improve fast based on real operations and deliver useful capability early.',
+      },
+      {
+        title: 'Scale or maintin an exclusive competitive advantage',
+        body: 'Turn the early stage start up model on its head with upside and ownership.',
       },
     ],
   },
@@ -92,7 +92,7 @@ const pageCopy = {
   },
   contact: {
     title: 'Bring the workflow problem, not a full spec',
-    body: 'If your team is compensating for software that does not fit the work, Never9 can help turn that friction into a purpose-built system.',
+    body: 'Our team includes start up founders who built using large VC investments. We are changing that equation. If your team is compensating for software that does not fit the work, Never9 can help turn that friction into a purpose-built system.',
     cta: 'Start a Conversation',
   },
 };
