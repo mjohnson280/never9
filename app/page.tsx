@@ -114,7 +114,7 @@ export default function Page() {
           {pageCopy.header.brand}
         </p>
         <a
-          href="#contact"
+          href="/contact"
           className="rounded-full border border-ink/20 bg-white/85 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40"
         >
           {pageCopy.header.cta}
@@ -129,7 +129,7 @@ export default function Page() {
           <p className="max-w-3xl text-lg leading-8 text-ink/74">{pageCopy.hero.body}</p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
             >
               {pageCopy.hero.primaryCta}
@@ -235,7 +235,7 @@ export default function Page() {
         <h2 className="text-3xl font-semibold md:text-4xl">{pageCopy.contact.title}</h2>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">{pageCopy.contact.body}</p>
         <a
-          href="mailto:hello@never9.ai"
+          href="/contact"
           className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:bg-white/90"
         >
           {pageCopy.contact.cta}

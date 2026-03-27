@@ -35,6 +35,21 @@ After the branches are connected, Vercel will automatically create:
 You typically do not need a `vercel.json` file for this starter unless you want custom rewrites/headers.
 Set `NEXT_PUBLIC_SITE_URL` in Vercel per environment if you want canonical sitemap/robots URLs to match each domain.
 
+## Contact Form Email Configuration
+
+The `/contact` form submits to `app/api/contact/route.ts` and sends emails with:
+
+- To: `mjohnson280@gmail.com`
+- Subject: `Never9 submission`
+
+Configure these environment variables in Vercel (and locally if testing):
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `SMTP_FROM`
+
 ## Codex Agent Workflow
 
 Use this flow for all work done by your Codex agent:
