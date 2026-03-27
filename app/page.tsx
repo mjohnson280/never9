@@ -97,7 +97,16 @@ const pageCopy = {
   },
 };
 
+function getDeploymentStamp(): string {
+  const env = process.env.VERCEL_ENV ?? process.env.NODE_ENV ?? 'unknown';
+  const branch = process.env.VERCEL_GIT_COMMIT_REF ?? 'local';
+  const sha = process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) ?? 'dev';
+  return `${env} | ${branch} | ${sha}`;
+}
+
 export default function Page() {
+  const deploymentStamp = getDeploymentStamp();
+
   return (
     <main className="mx-auto max-w-6xl px-6 pb-24 pt-10 md:pt-16">
       <header className="flex items-center justify-between">
@@ -231,6 +240,9 @@ export default function Page() {
         >
           {pageCopy.contact.cta}
         </a>
+        <p className="mt-6 text-xs font-medium uppercase tracking-[0.12em] text-white/55">
+          Deployment stamp: {deploymentStamp}
+        </p>
       </section>
     </main>
   );
