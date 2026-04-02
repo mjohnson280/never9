@@ -78,7 +78,7 @@ export default function HowWeWork() {
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
-              Traditional software development required two things most teams couldn't afford: time
+              Traditional software development required two things most teams couldn&apos;t afford: time
               and engineers. Venture-backed startups raised large rounds, hired expensive teams, and
               spent years building toward a massive exit — one that rarely came, or came too late.
               Off-the-shelf SaaS filled the gap, but it was never quite right. Teams adapted their
@@ -86,7 +86,7 @@ export default function HowWeWork() {
             </p>
             <p>
               AI-assisted development changes the equation. Focused, workflow-specific applications
-              can now be built at a speed and cost profile that wasn't practical even two years ago.
+              can now be built at a speed and cost profile that wasn&apos;t practical even two years ago.
               Never9 is built around that shift.
             </p>
           </div>
@@ -147,13 +147,13 @@ export default function HowWeWork() {
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
               The venture model rewards massive exits. Most companies never get there — and by the
-              time they don't, the founders have been diluted, the runway is gone, and the window
+              time they don&apos;t, the founders have been diluted, the runway is gone, and the window
               has closed.
             </p>
             <p>
               Never9 is built around a different thesis: build something real, prove it works, and
-              sell it early for $1–3M instead of chasing a $50M outcome that may never come. We've
-              been on the other side of that equation. We're not doing it again.
+              sell it early for $1–3M instead of chasing a $50M outcome that may never come. We&apos;ve
+              been on the other side of that equation. We&apos;re not doing it again.
             </p>
           </div>
         </section>
