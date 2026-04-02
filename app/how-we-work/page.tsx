@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'How We Work | Never9',
   description:
-    'Never9 builds workflow-specific applications in partnership with operators. Here's the model.',
+    "Never9 builds workflow-specific applications in partnership with operators. Here's the model.",
 };
 
 const steps = [
