@@ -1,108 +1,168 @@
-const article = {
-  eyebrow: 'Never9 Framework',
-  title: 'Build in partnership with the people doing the work',
-  intro:
-    'Never9 focuses on workflow-specific applications built with operators, not around them. This page explains the practical execution model we use to move from workflow friction to useful software quickly.',
-  sections: [
-    {
-      heading: '1) Find the repeated pain point with stakeholders',
-      body: 'We start by identifying recurring workflow friction with the people closest to execution. The point is not to gather abstract requirements. The point is to isolate a repeated operational bottleneck.',
-    },
-    {
-      heading: '2) Build around the actual workflow',
-      body: 'We design and ship around the process as it really runs today. The first version is focused and practical, so teams can use it quickly and give feedback from real work.',
-    },
-    {
-      heading: '3) Iterate quickly from live usage',
-      body: 'After launch, we tighten the system based on operator behavior, handoff failures, and decision latency. This keeps momentum high and risk low.',
-    },
-    {
-      heading: '4) Scale or maintain an exclusive advantage',
-      body: 'Once the system proves value, the company can keep it as an internal operational edge or turn it into a product opportunity for adjacent users.',
-    },
-  ],
+export const metadata = {
+  title: 'How We Work | Never9',
+  description:
+    'Never9 builds workflow-specific applications in partnership with operators. Here's the model.',
 };
 
-const workflowDiagram = [
-  '[Workflow friction identified]',
-  '      ->',
-  '[Operator + stakeholder inputs]',
-  '      ->',
-  '[Focused application shipped]',
-  '      ->',
-  '[Live usage feedback loop]',
-  '      ->',
-  '[Operational edge or product path]',
+const steps = [
+  {
+    number: '01',
+    title: 'Find the repeated pain point with stakeholders',
+    body: 'We start by identifying recurring workflow friction with the people closest to execution. Not abstract requirements. A real, repeated operational bottleneck that is costing time, headcount, or visibility.',
+  },
+  {
+    number: '02',
+    title: 'Build around the actual workflow',
+    body: 'We design and ship around the process as it actually runs today — not the idealized version. The first version is focused and practical so teams can use it quickly and give feedback from real work.',
+  },
+  {
+    number: '03',
+    title: 'Iterate quickly from live usage',
+    body: 'After launch, we tighten the system based on operator behavior, handoff failures, and decision latency. Momentum stays high. Risk stays low.',
+  },
+  {
+    number: '04',
+    title: 'Scale or maintain an exclusive advantage',
+    body: 'Once the system proves value, the path splits. Keep it proprietary as an internal operational edge — or open it to others with the same problem and turn it into a product. Either way, ownership stays consolidated and the exit comes early, not after years of dilution.',
+  },
 ];
 
-const feedbackLoopDiagram = [
-  '[Ship]',
-  '  -> [Observe]',
-  '  -> [Prioritize]',
-  '  -> [Improve]',
-  '  -> [Ship again]',
+const outcomes = [
+  {
+    title: 'Keep the Advantage',
+    items: [
+      'Maintain a custom internal edge',
+      'Fit the tool tightly to your operation',
+      'Acquire and own the solution outright',
+    ],
+  },
+  {
+    title: 'Scale the Solution',
+    items: [
+      'Release to others with the same challenge',
+      'Turn internal insight into a product opportunity',
+      'Maintain ownership and upside as it grows',
+    ],
+  },
 ];
 
-export default function HowWeWorkPage() {
+export default function HowWeWork() {
   return (
-    <main className="mx-auto max-w-4xl px-6 pb-20 pt-12 md:pt-16">
+    <main className="mx-auto max-w-3xl px-6 pb-20 pt-12 md:pt-16">
       <div className="flex flex-wrap items-center gap-3">
-        <a
-          href="/"
-          className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60"
-        >
+        <a href="/" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
           Back to home
         </a>
         <span className="text-ink/35">|</span>
-        <a
-          href="/contact"
-          className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60"
-        >
+        <a href="/contact" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
           Start a conversation
         </a>
       </div>
 
       <article className="mt-8 rounded-3xl border border-ink/12 bg-white/80 p-8 md:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
-          {article.eyebrow}
+          Never9 Framework
         </p>
         <h1 className="mt-3 text-4xl font-semibold leading-tight text-ink md:text-5xl">
-          {article.title}
+          Build in partnership with the people doing the work
         </h1>
-        <p className="mt-5 text-base leading-8 text-ink/74">{article.intro}</p>
+        <p className="mt-5 text-base leading-8 text-ink/74">
+          Most software gets built around assumptions. We build around operators — the people closest
+          to the friction, the workarounds, and the actual workflow. This page explains how we work
+          and why the model is different.
+        </p>
 
-        <section className="mt-8 rounded-2xl border border-ink/10 bg-sand/60 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/60">
-            Delivery map
-          </p>
-          <pre className="mt-4 overflow-x-auto whitespace-pre text-sm leading-7 text-ink/78">
-            {workflowDiagram.join('\n')}
-          </pre>
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold text-ink">
+            The old model is broken for most companies.
+          </h2>
+          <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
+            <p>
+              Traditional software development required two things most teams couldn't afford: time
+              and engineers. Venture-backed startups raised large rounds, hired expensive teams, and
+              spent years building toward a massive exit — one that rarely came, or came too late.
+              Off-the-shelf SaaS filled the gap, but it was never quite right. Teams adapted their
+              work to fit the software instead of the other way around.
+            </p>
+            <p>
+              AI-assisted development changes the equation. Focused, workflow-specific applications
+              can now be built at a speed and cost profile that wasn't practical even two years ago.
+              Never9 is built around that shift.
+            </p>
+          </div>
         </section>
 
-        <div className="mt-10 space-y-9">
-          {article.sections.map((section) => (
-            <section key={section.heading}>
-              <h2 className="text-2xl font-semibold text-ink">{section.heading}</h2>
-              <p className="mt-3 text-sm leading-8 text-ink/74">{section.body}</p>
-            </section>
-          ))}
-        </div>
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold text-ink">The Never9 model</h2>
+          <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
+            <p>
+              We partner directly with the stakeholder who has the problem. They bring domain
+              knowledge and operational context. We bring the build. Together we move fast, ship
+              something useful early, and iterate from real usage — not from a requirements doc
+              written six months before launch.
+            </p>
+            <p>
+              The stakeholder contributes to the build. In return, they get a tool purpose-built for
+              their operation — and upside if it scales.
+            </p>
+          </div>
+        </section>
 
-        <section className="mt-10 rounded-2xl border border-ink/10 bg-sand/60 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/60">
-            Iteration loop
-          </p>
-          <pre className="mt-4 overflow-x-auto whitespace-pre text-sm leading-7 text-ink/78">
-            {feedbackLoopDiagram.join('\n')}
-          </pre>
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold text-ink">How it works in practice</h2>
+          <div className="mt-8 space-y-10">
+            {steps.map((step) => (
+              <div key={step.number} className="flex gap-6">
+                <span className="w-10 shrink-0 text-2xl font-light text-ink/25">{step.number}</span>
+                <div>
+                  <h3 className="text-base font-semibold text-ink">{step.title}</h3>
+                  <p className="mt-2 text-sm leading-8 text-ink/74">{step.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold text-ink">Two outcomes, both valuable</h2>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {outcomes.map((col) => (
+              <div key={col.title} className="rounded-2xl border border-ink/12 bg-sand/60 p-6">
+                <h3 className="font-semibold text-ink">{col.title}</h3>
+                <ul className="mt-4 space-y-2 text-sm text-ink/74">
+                  {col.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className="mt-1 text-ink/40">—</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold text-ink">Why sell early?</h2>
+          <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
+            <p>
+              The venture model rewards massive exits. Most companies never get there — and by the
+              time they don't, the founders have been diluted, the runway is gone, and the window
+              has closed.
+            </p>
+            <p>
+              Never9 is built around a different thesis: build something real, prove it works, and
+              sell it early for $1–3M instead of chasing a $50M outcome that may never come. We've
+              been on the other side of that equation. We're not doing it again.
+            </p>
+          </div>
         </section>
 
         <a
           href="/contact"
           className="mt-10 inline-flex rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
         >
-          Start a conversation
+          Start a Conversation →
         </a>
       </article>
     </main>
