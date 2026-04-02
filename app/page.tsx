@@ -28,6 +28,11 @@ const pageCopy = {
       'AI-assisted development changes that equation. Focused applications are now feasible at a speed and cost profile that was not practical even a few years ago.',
     ],
   },
+  nameStory: {
+    badge: 'What Does Never9 Mean?',
+    cta: 'Read the origin story',
+    href: '/what-does-never9-mean',
+  },
   approach: {
     title: 'Build in partnership with the people doing the work',
     steps: [
@@ -97,7 +102,16 @@ const pageCopy = {
   },
 };
 
+function getDeploymentStamp(): string {
+  const env = process.env.VERCEL_ENV ?? process.env.NODE_ENV ?? 'unknown';
+  const branch = process.env.VERCEL_GIT_COMMIT_REF ?? 'local';
+  const sha = process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7) ?? 'dev';
+  return `${env} | ${branch} | ${sha}`;
+}
+
 export default function Page() {
+  const deploymentStamp = getDeploymentStamp();
+
   return (
     <main className="mx-auto max-w-6xl px-6 pb-24 pt-10 md:pt-16">
       <header className="flex items-center justify-between">
@@ -105,7 +119,7 @@ export default function Page() {
           {pageCopy.header.brand}
         </p>
         <a
-          href="#contact"
+          href="/contact"
           className="rounded-full border border-ink/20 bg-white/85 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40"
         >
           {pageCopy.header.cta}
@@ -120,13 +134,13 @@ export default function Page() {
           <p className="max-w-3xl text-lg leading-8 text-ink/74">{pageCopy.hero.body}</p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
             >
               {pageCopy.hero.primaryCta}
             </a>
             <a
-              href="#approach"
+              href="/how-we-work"
               className="rounded-full border border-ink/15 bg-white/85 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/30"
             >
               {pageCopy.hero.secondaryCta}
@@ -163,6 +177,18 @@ export default function Page() {
             </p>
           ))}
         </div>
+      </section>
+
+      <section className="mt-10 flex justify-center">
+        <a
+          href={pageCopy.nameStory.href}
+          className="inline-flex items-center gap-3 rounded-full border border-ink/15 bg-white/85 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/35"
+        >
+          <span className="text-xs uppercase tracking-[0.2em] text-ink/60">
+            {pageCopy.nameStory.badge}
+          </span>
+          <span className="text-ember">{pageCopy.nameStory.cta}</span>
+        </a>
       </section>
 
       <section id="approach" className="mt-20">
@@ -226,11 +252,14 @@ export default function Page() {
         <h2 className="text-3xl font-semibold md:text-4xl">{pageCopy.contact.title}</h2>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">{pageCopy.contact.body}</p>
         <a
-          href="mailto:hello@never9.ai"
+          href="/contact"
           className="mt-8 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:bg-white/90"
         >
           {pageCopy.contact.cta}
         </a>
+        <p className="mt-6 text-xs font-medium uppercase tracking-[0.12em] text-white/55">
+          Deployment stamp: {deploymentStamp}
+        </p>
       </section>
     </main>
   );
