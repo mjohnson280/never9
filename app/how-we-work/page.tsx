@@ -68,8 +68,7 @@ export default function HowWeWork() {
         </h1>
         <p className="mt-5 text-base leading-8 text-ink/74">
           Most software gets built around assumptions. We build around operators — the people closest
-          to the friction, the workarounds, and the actual workflow. This page explains how we work
-          and why the model is different.
+          to the friction, the workarounds, and the actual workflow.
         </p>
 
         <section className="mt-12">
@@ -158,12 +157,20 @@ export default function HowWeWork() {
           </div>
         </section>
 
-        <a
-          href="/contact"
-          className="mt-10 inline-flex rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
-        >
-          Start a Conversation →
-        </a>
+        <div className="mt-10 flex flex-wrap gap-4">
+          <a
+            href="/contact"
+            className="inline-flex rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
+          >
+            Start a Conversation →
+          </a>
+          <a
+            href="https://stage.never9.ai/what-does-never9-mean"
+            className="inline-flex rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-ink/5"
+          >
+            What Does Never9 Mean →
+          </a>
+        </div>
       </article>
     </main>
   );
