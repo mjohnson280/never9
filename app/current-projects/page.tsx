@@ -4,26 +4,13 @@ export const metadata = {
     'Never9 works on concurrent projects as standalone entities, collaborations, and investments.',
 };
 
-type ProjectType = 'Standalone' | 'Collaboration' | 'Investment';
-
 const projects: {
   name: string;
-  type: ProjectType;
   logo?: string; // future: path to logo image
 }[] = [
-  { name: 'Project One', type: 'Standalone' },
-  { name: 'Project Two', type: 'Collaboration' },
-  { name: 'Project Three', type: 'Investment' },
-  { name: 'Project Four', type: 'Standalone' },
-  { name: 'Project Five', type: 'Collaboration' },
-  { name: 'Project Six', type: 'Investment' },
+  { name: 'Project One' },
+  { name: 'Project Two' },
 ];
-
-const typeBadgeClass: Record<ProjectType, string> = {
-  Standalone: 'bg-ember/10 text-ember',
-  Collaboration: 'bg-ink/8 text-ink/60',
-  Investment: 'bg-sand text-ink/60',
-};
 
 export default function CurrentProjects() {
   return (
@@ -47,31 +34,26 @@ export default function CurrentProjects() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 grid gap-5 sm:grid-cols-2">
         {projects.map((project) => (
           <article
             key={project.name}
             className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-ink/10 bg-white/78 p-10"
-            style={{ minHeight: '180px' }}
+            style={{ minHeight: '200px' }}
           >
             {project.logo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={project.logo} alt={project.name} className="max-h-14 w-auto object-contain" />
             ) : (
-              <div className="flex h-14 w-full items-center justify-center rounded-xl border border-dashed border-ink/20">
-                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/30">
-                  Logo
+              <div className="flex h-16 w-full max-w-xs items-center justify-center rounded-xl border border-ink/15 bg-ink/4">
+                <span className="text-xs font-semibold uppercase tracking-[0.22em] text-ink/40">
+                  In Stealth Mode
                 </span>
               </div>
             )}
-            <div className="flex flex-col items-center gap-2 text-center">
-              <p className="text-sm font-semibold text-ink">{project.name}</p>
-              <span
-                className={`rounded-full px-3 py-0.5 text-xs font-semibold uppercase tracking-[0.14em] ${typeBadgeClass[project.type]}`}
-              >
-                {project.type}
-              </span>
-            </div>
+            <span className="text-xs font-semibold uppercase tracking-[0.14em] text-ember">
+              Standalone
+            </span>
           </article>
         ))}
       </div>
