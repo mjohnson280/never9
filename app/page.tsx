@@ -118,12 +118,20 @@ export default function Page() {
         <p className="inline-flex rounded-full border border-ink/10 bg-white/75 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-ink/70">
           {pageCopy.header.brand}
         </p>
-        <a
-          href="/contact"
-          className="rounded-full border border-ink/20 bg-white/85 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40"
-        >
-          {pageCopy.header.cta}
-        </a>
+        <nav className="flex items-center gap-5">
+          <a
+            href="/current-projects"
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
+          >
+            Current Projects
+          </a>
+          <a
+            href="/contact"
+            className="rounded-full border border-ink/20 bg-white/85 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40"
+          >
+            {pageCopy.header.cta}
+          </a>
+        </nav>
       </header>
 
       <section className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
