@@ -6,6 +6,8 @@ const TO_EMAIL = 'mjohnson280@gmail.com';
 const SUBJECT = 'Never9 submission';
 
 type ContactPayload = {
+  name?: string;
+  industry?: string;
   message?: string;
   email?: string;
   phone?: string;
@@ -41,13 +43,15 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Invalid request body.' }, { status: 400 });
   }
 
+  const name = payload.name?.trim() ?? '';
+  const industry = payload.industry?.trim() ?? '';
   const message = payload.message?.trim() ?? '';
   const email = payload.email?.trim() ?? '';
   const phone = payload.phone?.trim() ?? '';
 
-  if (!message || !email || !phone) {
+  if (!name || !industry || !message || !email || !phone) {
     return NextResponse.json(
-      { error: 'Message, email, and phone are required.' },
+      { error: 'All fields are required.' },
       { status: 400 }
     );
   }
@@ -78,6 +82,8 @@ export async function POST(request: Request) {
       text: [
         'New Never9 contact submission',
         '',
+        `Name: ${name}`,
+        `Industry: ${industry}`,
         `Email: ${email}`,
         `Phone: ${phone}`,
         '',

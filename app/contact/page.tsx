@@ -5,6 +5,8 @@ import { FormEvent, useMemo, useState } from 'react';
 const MAX_MESSAGE_LENGTH = 1500;
 
 export default function ContactPage() {
+  const [name, setName] = useState('');
+  const [industry, setIndustry] = useState('');
   const [message, setMessage] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -16,12 +18,14 @@ export default function ContactPage() {
   const remainingChars = MAX_MESSAGE_LENGTH - message.length;
   const isValid = useMemo(() => {
     return (
+      name.trim().length > 0 &&
+      industry.trim().length > 0 &&
       message.trim().length > 0 &&
       message.length <= MAX_MESSAGE_LENGTH &&
       email.trim().length > 0 &&
       phone.trim().length > 0
     );
-  }, [message, email, phone]);
+  }, [name, industry, message, email, phone]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -39,6 +43,8 @@ export default function ContactPage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          name,
+          industry,
           message,
           email,
           phone,
@@ -53,6 +59,8 @@ export default function ContactPage() {
       }
 
       setStatus('success');
+      setName('');
+      setIndustry('');
       setMessage('');
       setEmail('');
       setPhone('');
@@ -77,6 +85,34 @@ export default function ContactPage() {
         </h1>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+          <div>
+            <label htmlFor="name" className="block text-sm font-semibold text-ink">
+              Name
+            </label>
+            <input
+              id="name"
+              type="text"
+              className="mt-2 h-11 w-full rounded-xl border border-ink/15 bg-white px-4 text-sm text-ink outline-none transition focus:border-ink/40"
+              value={name}
+              onChange={(event) => setName(event.target.value)}
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="industry" className="block text-sm font-semibold text-ink">
+              Industry
+            </label>
+            <input
+              id="industry"
+              type="text"
+              className="mt-2 h-11 w-full rounded-xl border border-ink/15 bg-white px-4 text-sm text-ink outline-none transition focus:border-ink/40"
+              value={industry}
+              onChange={(event) => setIndustry(event.target.value)}
+              required
+            />
+          </div>
+
           <div>
             <label htmlFor="pain-point" className="block text-sm font-semibold text-ink">
               Tell us how we can solve a pain point
