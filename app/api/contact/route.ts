@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
 const MAX_MESSAGE_LENGTH = 1500;
@@ -13,25 +13,10 @@ type ContactPayload = {
   phone?: string;
 };
 
-function getMissingEnv(): string[] {
-  const requiredVars = [
-    'SMTP_HOST',
-    'SMTP_PORT',
-    'SMTP_USER',
-    'SMTP_PASS',
-    'SMTP_FROM',
-  ] as const;
-
-  return requiredVars.filter((key) => !process.env[key]);
-}
-
 export async function POST(request: Request) {
-  const missing = getMissingEnv();
-  if (missing.length > 0) {
+  if (!process.env.RESEND_API_KEY) {
     return NextResponse.json(
-      {
-        error: `Server email configuration is incomplete: ${missing.join(', ')}`,
-      },
+      { error: 'Server email configuration is incomplete: RESEND_API_KEY' },
       { status: 500 }
     );
   }
@@ -63,19 +48,11 @@ export async function POST(request: Request) {
     );
   }
 
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: Number(process.env.SMTP_PORT),
-    secure: Number(process.env.SMTP_PORT) === 465,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
-    await transporter.sendMail({
-      from: process.env.SMTP_FROM,
+    await resend.emails.send({
+      from: 'Never9 <onboarding@resend.dev>',
       to: TO_EMAIL,
       subject: SUBJECT,
       replyTo: email,
