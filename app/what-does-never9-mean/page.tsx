@@ -20,12 +20,12 @@ export default function WhatDoesNever9Mean() {
         </h1>
 
         {/* Founder byline */}
-        <div className="mt-10 flex flex-col items-center rounded-2xl border border-ink/12 bg-sand/60 px-6 py-8 text-center">
+        <div className="mt-10 rounded-2xl border border-ink/12 bg-sand/60 px-6 py-8">
           <p className="text-xl font-semibold text-ink">Matt Johnson</p>
           <p className="mt-1 text-sm font-medium uppercase tracking-[0.18em] text-ink/50">
             Founder, Never9
           </p>
-          <p className="mt-3 max-w-md text-sm leading-7 text-ink/70">
+          <p className="mt-3 text-sm leading-7 text-ink/70">
             Matt has been building, scaling, and investing in venture funded startups since 2011.
           </p>
           <a
