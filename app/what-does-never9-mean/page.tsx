@@ -19,10 +19,23 @@ export default function WhatDoesNever9Mean() {
           What Does Never9 Mean?
         </h1>
 
-        {/* Stealth photo placeholder */}
-        <div className="mt-10 flex aspect-video w-full flex-col items-center justify-center rounded-2xl border border-ink/12 bg-sand/60">
-          <p className="text-sm font-medium text-ink/40">We&apos;re in stealth mode.</p>
-          <p className="text-sm text-ink/40">Releasing details soon.</p>
+        {/* Founder byline */}
+        <div className="mt-10 flex flex-col items-center rounded-2xl border border-ink/12 bg-sand/60 px-6 py-8 text-center">
+          <p className="text-xl font-semibold text-ink">Matt Johnson</p>
+          <p className="mt-1 text-sm font-medium uppercase tracking-[0.18em] text-ink/50">
+            Founder, Never9
+          </p>
+          <p className="mt-3 max-w-md text-sm leading-7 text-ink/70">
+            Matt has been building, scaling, and investing in venture funded startups since 2011.
+          </p>
+          <a
+            href="https://www.linkedin.com/in/matt-johnson-1233695/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-ember transition hover:text-ink"
+          >
+            Connect on LinkedIn &rarr;
+          </a>
         </div>
 
         <div className="mt-12 space-y-10">
