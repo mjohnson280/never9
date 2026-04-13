@@ -126,6 +126,12 @@ export default function Page() {
             Current Projects
           </a>
           <a
+            href="/what-does-never9-mean"
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
+          >
+            About Never9
+          </a>
+          <a
             href="/contact"
             className="rounded-full border border-ink/20 bg-white/85 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40"
           >
