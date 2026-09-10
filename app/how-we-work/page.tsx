@@ -165,7 +165,7 @@ export default function HowWeWork() {
             Start a Conversation →
           </a>
           <a
-            href="https://stage.never9.ai/what-does-never9-mean"
+            href="/what-does-never9-mean"
             className="inline-flex rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold text-ink transition hover:bg-ink/5"
           >
             What Does Never9 Mean →

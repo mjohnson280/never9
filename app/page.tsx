@@ -83,6 +83,13 @@ const pageCopy = {
       'Never9 gives clients the effect of an embedded product and engineering team without requiring one upfront.',
     ],
   },
+  consulting: {
+    badge: 'Never9 Consulting',
+    title: 'Rapid contract development for teams that know their industry',
+    body: 'Never9 also works on contract. We partner with stakeholders who understand their industry and its problems, design tight requirements, and get the solution built and launched using first principles.',
+    cta: 'Learn about rapid contract development',
+    href: '/rapid-contract-development',
+  },
   solutionTypes: {
     title: 'The right tool depends on the workflow',
     items: [
@@ -119,6 +126,12 @@ export default function Page() {
           {pageCopy.header.brand}
         </p>
         <nav className="flex items-center gap-5">
+          <a
+            href="/rapid-contract-development"
+            className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
+          >
+            Consulting
+          </a>
           <a
             href="/current-projects"
             className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
@@ -246,6 +259,29 @@ export default function Page() {
           {pageCopy.whyNow.points.map((point) => (
             <p key={point}>{point}</p>
           ))}
+        </div>
+      </section>
+
+      <section
+        id="consulting"
+        className="mt-20 grid gap-8 rounded-3xl border border-ink/12 bg-white/78 p-8 md:p-10 lg:grid-cols-[1.4fr_0.6fr] lg:items-center"
+      >
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
+            {pageCopy.consulting.badge}
+          </p>
+          <h2 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-ink md:text-4xl">
+            {pageCopy.consulting.title}
+          </h2>
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-ink/72">{pageCopy.consulting.body}</p>
+        </div>
+        <div className="lg:justify-self-end">
+          <a
+            href={pageCopy.consulting.href}
+            className="inline-flex rounded-full border border-ink/20 bg-white/85 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/40"
+          >
+            {pageCopy.consulting.cta}
+          </a>
         </div>
       </section>
 

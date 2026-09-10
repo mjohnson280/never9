@@ -62,6 +62,7 @@ export default function RootLayout({
               </p>
               <nav className="mt-3 flex flex-col gap-2">
                 <a href="/current-projects" className="text-[13px] text-ink/60 transition hover:text-ink">Current Projects</a>
+                <a href="/rapid-contract-development" className="text-[13px] text-ink/60 transition hover:text-ink">Rapid Contract Development</a>
               </nav>
             </div>
 
