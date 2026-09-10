@@ -21,7 +21,7 @@ Always run both checks and confirm they exit clean before committing and pushing
 - **API route:** `app/api/contact/route.ts` — validates all fields, sends email via Resend
 - **Delivery:** Resend API to mjohnson280@gmail.com, subject line "Never9 submission"
 - **Sender:** Currently `onboarding@resend.dev` (Resend sandbox) — temporary, see TODOs below
-- **Env vars:** `RESEND_API_KEY` in `.env.local` locally and in Vercel env vars for both production and preview (stage branch)
+- **Env vars:** `RESEND_API_KEY` in `.env.local` locally and in Vercel env vars for production (and preview, left over from the retired stage branch)
 - **Dependencies:** `resend`
 
 ## Roadmap
