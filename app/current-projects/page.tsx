@@ -31,8 +31,8 @@ export default function CurrentProjects() {
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-8 text-ink/70">
           Custom builds and incubated spinouts from the Never9 studio, alongside the founders and
-          executive teams we embed with. Some are ours. Some are shared. All of them have an engineer
-          who owns whether they work.
+          executive teams we embed with. Some are ours. Some are shared. All of them exist to get someone
+          to market, or to help them perform better within it.
         </p>
       </div>
 

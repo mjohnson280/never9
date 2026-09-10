@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Rapid Contract Development | Never9',
   description:
-    'Rapid contract development from Never9. We embed with founders and executives, diagnose the real problem, build the fix, and stay accountable for it in production.',
+    'Rapid contract development from Never9. We embed with founders and executives, diagnose the real problem, build the fix, and help you get to market or perform better within it.',
   alternates: {
     canonical: '/rapid-contract-development',
   },
   openGraph: {
     title: 'Rapid Contract Development | Never9',
     description:
-      'Rapid contract development with a small senior team that sits with executives, diagnoses the real problem, builds the fix, and owns it in production.',
+      'Rapid contract development with a small senior team that sits with executives, diagnoses the real problem, builds the fix, and helps you get to market or perform better within it.',
     url: '/rapid-contract-development',
     type: 'website',
   },
@@ -27,8 +27,8 @@ const pillars = [
     body: 'The stated problem is rarely the expensive one. We map the workflow, look at the data, and write requirements tight enough to build from: what the product has to do, in what order, and what it can leave out.',
   },
   {
-    title: 'The engineer owns production',
-    body: 'The engineer who builds it stays accountable for whether it works after launch. Adoption, reliability, and the number it was supposed to move are our problem, not a change order.',
+    title: 'We help you get to market, or perform better in it',
+    body: 'The build is not the finish line. We stay with the product until it is doing its job: a launch that reaches customers, or an operation that runs faster with fewer workarounds.',
   },
 ];
 
@@ -53,7 +53,7 @@ const engagements = [
 const services = [
   'Diagnosis and product requirements',
   'Application design and build',
-  'Launch, deployment, and production ownership',
+  'Launch, deployment, and go-to-market',
   'Go-to-market plan and positioning',
   'Financial model and pricing',
   'Fractional product, GTM, and finance leadership',
@@ -84,12 +84,12 @@ export default function RapidContractDevelopment() {
             Never9 Engagements
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-ink md:text-6xl">
-            Rapid contract development, with the engineer accountable for production
+            Rapid contract development that gets you to market, or performing better in it
           </h1>
           <p className="max-w-3xl text-lg leading-8 text-ink/74">
             Never9 embeds with founders and executive teams. We sit with the people who own the
             problem, diagnose what is actually worth fixing, and build the digital product that fixes
-            it. The engineer who builds it owns whether it works in production.
+            it. Then we&apos;ll help you get to market, or perform better within it.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -159,7 +159,7 @@ export default function RapidContractDevelopment() {
           <h2 className="text-3xl font-semibold text-ink md:text-4xl">Who this is for</h2>
           <p className="mt-4 text-sm leading-7 text-ink/72">
             Rapid contract development works when the client knows their industry cold and has a
-            problem worth fixing. We supply the diagnosis, the build, and the accountability. The
+            problem worth fixing. We supply the diagnosis, the build, and the launch. The
             client supplies the domain.
           </p>
         </div>

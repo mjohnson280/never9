@@ -5,19 +5,19 @@ const pageCopy = {
     cta: 'Start a Conversation',
   },
   hero: {
-    title: 'Diagnose the real problem. Build the fix. Own it in production.',
-    body: 'Never9 is a rapid development studio. We sit with founders and executives as part of the team, find the problem that is actually costing them, and build the digital product that fixes it. The engineer who builds it is accountable for whether it works in production.',
+    title: 'Diagnose the real problem. Build the fix. Get to market, or perform better in it.',
+    body: 'Never9 is a rapid development studio. We sit with founders and executives as part of the team, find the problem that is actually costing them, and build the digital product that fixes it. Then we will help you get to market, or perform better within it.',
     primaryCta: 'Start a Conversation',
     secondaryCta: 'See How We Work',
     supportLine:
-      'Embedded with your team | Small senior teams | Accountable after launch',
+      'Embedded with your team | Small senior teams | Built to ship',
   },
   model: {
     title: 'The Never9 Model',
     items: [
       { label: 'Who we work with', value: 'Founders and executive teams' },
       { label: 'What we build', value: 'Digital products that fix one specific, expensive problem' },
-      { label: 'Who owns the outcome', value: 'The engineer who shipped it' },
+      { label: 'What you get', value: 'A way to market, or a better way to perform in it' },
     ],
   },
   problem: {
@@ -25,7 +25,7 @@ const pageCopy = {
     points: [
       'Traditional consultancies were built when shipping software was slow and expensive. Large teams, long discovery, and decks before code made sense then. Today that overhead is the slowest part of the project.',
       'Off-the-shelf SaaS solves the average problem, not yours. Teams end up working around the tool with spreadsheets, manual handoffs, and workarounds nobody owns.',
-      'AI-assisted development changes the equation. A small senior team can now diagnose, build, and launch a focused product in weeks, and stay accountable for it after launch. Never9 is built around that shift.',
+      'AI-assisted development changes the equation. A small senior team can now diagnose, build, and launch a focused product in weeks, then help the business get to market or perform better within it. Never9 is built around that shift.',
     ],
   },
   nameStory: {
@@ -49,8 +49,8 @@ const pageCopy = {
         body: 'A small senior team builds a focused product against tight requirements and gets it into real use fast, while it is still cheap to change.',
       },
       {
-        title: 'Own it in production',
-        body: 'The engineer who built it stays accountable for whether it works: adoption, reliability, and the number it was supposed to move.',
+        title: 'Get to market, or perform better in it',
+        body: 'The fix ships, and we stay with it until it is doing its job: a product that reaches customers, or an operation that runs faster, with fewer workarounds and a number that moved.',
       },
     ],
   },

@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'How We Work | Never9',
   description:
-    'Never9 sits with founders and executives, diagnoses the real problem, builds the fix, and owns it in production. Two ways to work with us: embedded engagements and studio spinouts.',
+    'Never9 sits with founders and executives, diagnoses the real problem, builds the fix, and helps you get to market or perform better within it. Two ways to work with us: embedded engagements and studio spinouts.',
 };
 
 const steps = [
@@ -22,8 +22,8 @@ const steps = [
   },
   {
     number: '04',
-    title: 'Own it in production',
-    body: 'The engineer who built it stays accountable for whether it works: adoption, reliability, and the number it was supposed to move. If it does not move, that is our problem to fix, not a change order.',
+    title: 'Get to market, or perform better in it',
+    body: 'The fix ships, and we stay with it until it is doing its job. For a new product, that means reaching customers. For an operation, that means running faster, with fewer workarounds and a number that actually moved.',
   },
 ];
 
@@ -81,12 +81,12 @@ export default function HowWeWork() {
           How We Work
         </p>
         <h1 className="mt-3 text-4xl font-semibold leading-tight text-ink md:text-5xl">
-          Diagnose the real problem. Build the fix. Own it in production.
+          Diagnose the real problem. Build the fix. Get to market, or perform better in it.
         </h1>
         <p className="mt-5 text-base leading-8 text-ink/74">
           Never9 is a rapid development studio. We sit with founders and executives as part of the
           team, find the problem that is actually costing them, and build the digital product that
-          fixes it. The engineer who builds it is accountable for whether it works.
+          fixes it. Then we help you get to market, or perform better within it.
         </p>
 
         <section className="mt-12">
@@ -123,9 +123,9 @@ export default function HowWeWork() {
               requirements document written six months before launch.
             </p>
             <p>
-              Ownership is the part most firms skip. The engineer who builds the product stays
-              accountable for whether it works in production. That changes how we scope, how we build,
-              and what we are willing to promise.
+              The build is not the finish line. We stay with the product until it is doing its job,
+              whether that is getting a new company to market or making an existing operation perform
+              better. That changes how we scope, how we build, and what we are willing to promise.
             </p>
           </div>
         </section>

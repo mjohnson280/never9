@@ -11,7 +11,7 @@ Always run both checks and confirm they exit clean before committing and pushing
 **One branch, `main`, deploys straight to production.** Matt tests in production (see global notes). Do not create or commit to a `stage` branch. Handle all commits and pushes autonomously — Matt does not want to navigate to GitHub or Vercel. Every change goes to `main` and is pushed as soon as the two pre-push checks pass.
 
 ## Positioning and voice (set 2026-09-10)
-Never9 is a **rapid development studio** (Minneapolis). Core line, used as the homepage H1 and footer tagline: **"Diagnose the real problem. Build the fix. Own it in production."** We sit with founders and executives as part of the team, diagnose what is actually costing them, build the digital product that fixes it, and the engineer who builds it is accountable for whether it works in production.
+Never9 is a **rapid development studio** (Minneapolis). Core line, used as the homepage H1 and footer tagline: **"Diagnose the real problem. Build the fix. Get to market, or perform better in it."** We sit with founders and executives as part of the team, diagnose what is actually costing them, build the digital product that fixes it, then help them get to market or perform better within it. **Do not use the "engineer owns whether it works in production" framing**; Matt cut it on 2026-09-10 because it did not read clearly.
 
 Two tracks, one method ("same team, same method; the difference is who owns the result"):
 - **Engagements** (consulting arm, `/rapid-contract-development`): embedded with the client's team on contract. Named shapes: Diagnosis (1 to 2 weeks), Build Sprint (fixed scope, weeks), Embedded Team (ongoing, part time, includes fractional product/GTM/finance).
