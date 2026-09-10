@@ -5,27 +5,27 @@ const pageCopy = {
     cta: 'Start a Conversation',
   },
   hero: {
-    title: 'Custom Software Where SaaS Falls Short',
-    body: 'Never9 is a rapid development house that partners directly with end users to design and launch workflow-specific applications, giving companies a practical alternative to off-the-shelf SaaS and the leverage of an embedded product team.',
+    title: 'Diagnose the real problem. Build the fix. Own it in production.',
+    body: 'Never9 is a rapid development studio. We sit with founders and executives as part of the team, find the problem that is actually costing them, and build the digital product that fixes it. The engineer who builds it is accountable for whether it works in production.',
     primaryCta: 'Start a Conversation',
     secondaryCta: 'See How We Work',
     supportLine:
-      'Workflow-specific applications | built with end users as partners | End user ownership and upside',
+      'Embedded with your team | Small senior teams | Accountable after launch',
   },
-  coreFocus: {
-    title: 'Core Focus',
+  model: {
+    title: 'The Never9 Model',
     items: [
-      { label: 'Buyer Profile', value: 'Operators and functional leaders' },
-      { label: 'Pain Pattern', value: 'Application solutions for software and efficiency gaps' },
-      { label: 'Delivery Objective', value: 'Useful systems built as partners' },
+      { label: 'Who we work with', value: 'Founders and executive teams' },
+      { label: 'What we build', value: 'Digital products that fix one specific, expensive problem' },
+      { label: 'Who owns the outcome', value: 'The engineer who shipped it' },
     ],
   },
   problem: {
-    title: 'Most teams are still choosing between bad-fit software and custom builds.',
+    title: 'Most software work is still organized around deliberation, not results.',
     points: [
-      'Start ups were hamstrung by engineers and VC dollarsGeneric software often forces awkward workarounds that make operations slower, less visible, and harder to improve.',
-      'Spreadsheets and manual handoffs accumulate around system gaps, while traditional custom development has historically been too expensive or too slow for many teams.',
-      'AI-assisted development changes that equation. Focused applications are now feasible at a speed and cost profile that was not practical even a few years ago.',
+      'Traditional consultancies were built when shipping software was slow and expensive. Large teams, long discovery, and decks before code made sense then. Today that overhead is the slowest part of the project.',
+      'Off-the-shelf SaaS solves the average problem, not yours. Teams end up working around the tool with spreadsheets, manual handoffs, and workarounds nobody owns.',
+      'AI-assisted development changes the equation. A small senior team can now diagnose, build, and launch a focused product in weeks, and stay accountable for it after launch. Never9 is built around that shift.',
     ],
   },
   nameStory: {
@@ -34,77 +34,69 @@ const pageCopy = {
     href: '/what-does-never9-mean',
   },
   approach: {
-    title: 'Build in partnership with the people doing the work',
+    title: 'How we work',
     steps: [
       {
-        title: 'Find the repeated pain point with stakeholders',
-        body: 'Identify the workflow friction with the people who execcute it every day.',
+        title: 'Sit with the executives',
+        body: 'We start in the room with the people who own the problem and the people who live it every day. No intake form. No discovery phase measured in months.',
       },
       {
-        title: 'Build around the actual workflow',
-        body: 'Ship a focused application built for how the work is really done.',
+        title: 'Diagnose the real problem',
+        body: 'The stated problem is rarely the expensive one. We map the workflow, look at the data, and name the thing that is actually worth fixing.',
       },
       {
-        title: 'Iterate quickly from live usage',
-        body: 'Improve fast based on real operations and deliver useful capability early.',
+        title: 'Build the fix',
+        body: 'A small senior team builds a focused product against tight requirements and gets it into real use fast, while it is still cheap to change.',
       },
       {
-        title: 'Scale or maintin an exclusive competitive advantage',
-        body: 'Turn the early stage start up model on its head with upside and ownership.',
+        title: 'Own it in production',
+        body: 'The engineer who built it stays accountable for whether it works: adoption, reliability, and the number it was supposed to move.',
       },
     ],
   },
-  outcomes: {
-    title: 'The solution can stay proprietary or become a product',
-    columns: [
+  tracks: {
+    title: 'Two ways to work with Never9',
+    intro: 'Same team, same method. The difference is who owns the result.',
+    items: [
       {
-        title: 'Keep the Advantage',
-        points: [
-          'Maintain a custom internal edge',
-          'Fit the tool tightly to your operation',
-          'Acquire and own the solution',
-        ],
+        eyebrow: 'Engagements',
+        title: 'Embedded with your team',
+        body: 'We join founders and executive teams on contract to diagnose, build, and launch a digital product. Fractional product, go-to-market, and finance leadership when it helps. You own the code, the accounts, and the outcome.',
+        cta: 'Rapid contract development',
+        href: '/rapid-contract-development',
       },
       {
-        title: 'Scale the Solution',
-        points: [
-          'Release it to others with similar challenges',
-          'Turn internal insight into a product opportunity',
-          'maintain ownership and upside',
-        ],
+        eyebrow: 'Studio',
+        title: 'Custom builds and incubated spinouts',
+        body: 'We co-build with operators who have a problem worth productizing. Keep it as a proprietary edge inside your company, or spin it out as a standalone company with shared ownership and an early exit in mind.',
+        cta: 'How the studio model works',
+        href: '/how-we-work',
       },
     ],
   },
   whyNow: {
-    title: 'The build-versus-buy equation has changed',
+    title: 'Why a small team beats a big one now',
     points: [
-      'AI coding tools significantly increase development leverage for focused internal software.',
-      'Custom applications are now feasible at a different speed and cost profile.',
-      'Never9 gives clients the effect of an embedded product and engineering team without requiring one upfront.',
+      'AI coding tools give a senior engineer the leverage a whole team used to need. The constraint is no longer hands on keyboards. It is knowing what to build.',
+      'That is why we sit with executives before we write code. Diagnosis is where the value is. The build is how we prove we got it right.',
+      'Never9 gives clients the effect of an embedded product and engineering team without hiring one first, and without the overhead a traditional consultancy bills for.',
     ],
   },
-  consulting: {
-    badge: 'Never9 Consulting',
-    title: 'Rapid contract development for teams that know their industry',
-    body: 'Never9 also works on contract. We partner with stakeholders who understand their industry and its problems, design tight requirements, and get the solution built and launched using first principles.',
-    cta: 'Learn about rapid contract development',
-    href: '/rapid-contract-development',
-  },
   solutionTypes: {
-    title: 'The right tool depends on the workflow',
+    title: 'What we build',
     items: [
       'Internal workflow systems',
-      'Reporting and visibility tools',
+      'Customer and client portals',
       'Field operations apps',
       'Quoting, estimating, and configuration tools',
-      'Approvals and handoff systems',
-      'Client portals',
-      'Data intake and process orchestration tools',
+      'Reporting and visibility tools',
+      'Data intake and process orchestration',
+      'AI agents that do one specific job',
     ],
   },
   contact: {
-    title: 'Bring the workflow problem, not a full spec',
-    body: 'Our team includes start up founders who built using large VC investments. We are changing that equation. If your team is compensating for software that does not fit the work, Never9 can help turn that friction into a purpose-built system.',
+    title: 'Bring the problem, not a spec',
+    body: 'Our team includes founders who built companies on large venture rounds and multi-year timelines. We have seen what deliberation costs. If your team is working around software that does not fit, or you have a product that needs to exist, we will sit down, diagnose it, and tell you what we would build.',
     cta: 'Start a Conversation',
   },
 };
@@ -180,10 +172,10 @@ export default function Page() {
 
         <aside className="rounded-[34px] border border-white/70 bg-white/75 p-8 shadow-glow backdrop-blur">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-ember">
-            {pageCopy.coreFocus.title}
+            {pageCopy.model.title}
           </p>
           <div className="mt-6 space-y-6">
-            {pageCopy.coreFocus.items.map((item) => (
+            {pageCopy.model.items.map((item) => (
               <div key={item.label}>
                 <p className="text-sm font-semibold text-ink/60">{item.label}</p>
                 <p className="mt-1 text-xl font-semibold text-ink">{item.value}</p>
@@ -235,17 +227,26 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mt-20">
-        <h2 className="text-3xl font-semibold text-ink md:text-4xl">{pageCopy.outcomes.title}</h2>
+      <section id="tracks" className="mt-20">
+        <h2 className="text-3xl font-semibold text-ink md:text-4xl">{pageCopy.tracks.title}</h2>
+        <p className="mt-3 text-sm leading-7 text-ink/60">{pageCopy.tracks.intro}</p>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {pageCopy.outcomes.columns.map((outcome) => (
-            <article key={outcome.title} className="rounded-3xl border border-ink/10 bg-white/78 p-7">
-              <h3 className="text-2xl font-semibold text-ink">{outcome.title}</h3>
-              <ul className="mt-4 space-y-2 text-sm leading-7 text-ink/72">
-                {outcome.points.map((point) => (
-                  <li key={point}>- {point}</li>
-                ))}
-              </ul>
+          {pageCopy.tracks.items.map((track) => (
+            <article
+              key={track.title}
+              className="flex flex-col rounded-3xl border border-ink/10 bg-white/78 p-7"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
+                {track.eyebrow}
+              </p>
+              <h3 className="mt-3 text-2xl font-semibold text-ink">{track.title}</h3>
+              <p className="mt-4 flex-1 text-sm leading-7 text-ink/72">{track.body}</p>
+              <a
+                href={track.href}
+                className="mt-6 inline-flex w-fit rounded-full border border-ink/20 bg-white/85 px-5 py-2.5 text-sm font-semibold text-ink transition hover:border-ink/40"
+              >
+                {track.cta}
+              </a>
             </article>
           ))}
         </div>
@@ -259,29 +260,6 @@ export default function Page() {
           {pageCopy.whyNow.points.map((point) => (
             <p key={point}>{point}</p>
           ))}
-        </div>
-      </section>
-
-      <section
-        id="consulting"
-        className="mt-20 grid gap-8 rounded-3xl border border-ink/12 bg-white/78 p-8 md:p-10 lg:grid-cols-[1.4fr_0.6fr] lg:items-center"
-      >
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
-            {pageCopy.consulting.badge}
-          </p>
-          <h2 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-ink md:text-4xl">
-            {pageCopy.consulting.title}
-          </h2>
-          <p className="mt-4 max-w-3xl text-sm leading-7 text-ink/72">{pageCopy.consulting.body}</p>
-        </div>
-        <div className="lg:justify-self-end">
-          <a
-            href={pageCopy.consulting.href}
-            className="inline-flex rounded-full border border-ink/20 bg-white/85 px-6 py-3 text-sm font-semibold text-ink transition hover:border-ink/40"
-          >
-            {pageCopy.consulting.cta}
-          </a>
         </div>
       </section>
 

@@ -80,9 +80,12 @@ export default function ContactPage() {
 
       <section className="mt-8 rounded-3xl border border-ink/12 bg-white/80 p-8 shadow-glow">
         <h1 className="max-w-2xl text-3xl font-semibold leading-tight text-ink md:text-4xl">
-          We&apos;re excited to hear about how rapid software development could solve
-          for a gap or labor inefficiency in your industry
+          Tell us the problem. We&apos;ll tell you what we&apos;d build.
         </h1>
+        <p className="mt-4 max-w-2xl text-sm leading-7 text-ink/70">
+          Bring the problem, not a spec. Tell us what is slow, expensive, or held together with
+          spreadsheets, and we will come back with a diagnosis and what we would build.
+        </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
           <div>
@@ -115,7 +118,7 @@ export default function ContactPage() {
 
           <div>
             <label htmlFor="pain-point" className="block text-sm font-semibold text-ink">
-              Tell us how we can solve a pain point
+              What is the problem costing you?
             </label>
             <textarea
               id="pain-point"

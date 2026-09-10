@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Rapid Contract Development | Never9',
   description:
-    'Never9 provides rapid contract development for teams that know their industry and need a solution built and launched. Tight requirements, first-principles builds, fast launches.',
+    'Rapid contract development from Never9. We embed with founders and executives, diagnose the real problem, build the fix, and stay accountable for it in production.',
   alternates: {
     canonical: '/rapid-contract-development',
   },
   openGraph: {
     title: 'Rapid Contract Development | Never9',
     description:
-      'Rapid contract development with stakeholders who understand their industry. We design tight requirements and get solutions built and launched using first principles.',
+      'Rapid contract development with a small senior team that sits with executives, diagnoses the real problem, builds the fix, and owns it in production.',
     url: '/rapid-contract-development',
     type: 'website',
   },
@@ -19,55 +19,50 @@ export const metadata: Metadata = {
 // Edit copy in these objects. Layout/styles are kept below.
 const pillars = [
   {
-    title: 'Stakeholders who know the industry',
-    body: 'We work directly with the people who understand the market, the regulation, and the daily friction. Their domain knowledge is the starting point, not something we reverse-engineer from a brief.',
+    title: 'We sit with the executives',
+    body: 'The engagement starts in the room with the people who own the problem, not with an intake form. Their understanding of the industry, the regulation, and the daily friction is the starting point.',
   },
   {
-    title: 'Requirements tight enough to build from',
-    body: 'Before anything is built, we write down exactly what the solution has to do, in what order, and what it can leave out. Tight requirements are what make rapid development possible.',
+    title: 'We diagnose before we build',
+    body: 'The stated problem is rarely the expensive one. We map the workflow, look at the data, and write requirements tight enough to build from: what the product has to do, in what order, and what it can leave out.',
   },
   {
-    title: 'First-principles builds',
-    body: 'We start from the actual problem, not from a template or a stack preference. AI-assisted development lets a small team ship a focused solution in weeks instead of quarters.',
+    title: 'The engineer owns production',
+    body: 'The engineer who builds it stays accountable for whether it works after launch. Adoption, reliability, and the number it was supposed to move are our problem, not a change order.',
   },
 ];
 
-const steps = [
+const engagements = [
   {
-    number: '01',
-    title: 'Whiteboard the problem with the operators',
-    body: 'A working session with the people who own the problem. We map the workflow as it runs today, the deadline that matters, and what a usable first version has to include.',
+    name: 'Diagnosis',
+    length: '1 to 2 weeks',
+    body: 'A working session with the executive team and the operators, then a written diagnosis: the real problem, the workflow as it runs today, and requirements for the fix. Useful on its own, and the basis for a fixed-scope build.',
   },
   {
-    number: '02',
-    title: 'Write the requirements',
-    body: 'A short, ordered requirements document: modules, data model, dependencies, and governing dates. It is the contract for the build and the thing everyone can point to when scope drifts.',
+    name: 'Build Sprint',
+    length: 'Fixed scope, measured in weeks',
+    body: 'A small senior team builds the fix against the diagnosis and gets it into real use on a date the business actually needs. Deployed to a test site early so stakeholders are using the real thing while it is still cheap to change.',
   },
   {
-    number: '03',
-    title: 'Build and launch',
-    body: 'We build against the requirements and deploy to a test site early so stakeholders are using the real thing while it is still cheap to change. Launch happens on the date the business needs, not when the backlog runs out.',
-  },
-  {
-    number: '04',
-    title: 'Hand off or keep going',
-    body: 'Code, infrastructure, and accounts transfer cleanly to the client. From there we can step out, stay on part time, or keep building the next phase.',
+    name: 'Embedded Team',
+    length: 'Ongoing, part time',
+    body: 'A product leader and one or two engineers who sit inside your company. Product management, go-to-market, and financial modeling alongside the build, for founders who need a fractional executive team as much as they need code.',
   },
 ];
 
 const services = [
-  'Product requirements and roadmap',
+  'Diagnosis and product requirements',
+  'Application design and build',
+  'Launch, deployment, and production ownership',
   'Go-to-market plan and positioning',
   'Financial model and pricing',
-  'Application design and build',
-  'Launch, deployment, and handoff',
   'Fractional product, GTM, and finance leadership',
 ];
 
 const fits = [
   'A founding team with deep industry expertise and a launch date, but no engineering team yet',
-  'An operating company that needs a purpose-built system faster than a traditional custom build allows',
-  'A startup that has shipped a first version and needs the next phase built and the business case modeled',
+  'An executive team compensating for software that does not fit the work, with a number they need to move',
+  'A startup that has shipped a first version and needs the next phase built, and the business case modeled',
 ];
 
 export default function RapidContractDevelopment() {
@@ -86,15 +81,15 @@ export default function RapidContractDevelopment() {
       <section className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-6">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
-            Never9 Consulting
+            Never9 Engagements
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-ink md:text-6xl">
-            Rapid contract development, built with the people who know the problem
+            Rapid contract development, with the engineer accountable for production
           </h1>
           <p className="max-w-3xl text-lg leading-8 text-ink/74">
-            Never9&apos;s consulting arm partners with stakeholders who understand their industry and
-            its problems. We design tight requirements and get solutions built and launched using
-            first principles, on the timeline the business actually has.
+            Never9 embeds with founders and executive teams. We sit with the people who own the
+            problem, diagnose what is actually worth fixing, and build the digital product that fixes
+            it. The engineer who builds it owns whether it works in production.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -142,16 +137,19 @@ export default function RapidContractDevelopment() {
       </section>
 
       <section className="mt-20 rounded-3xl border border-ink/12 bg-white/80 p-8 md:p-10">
-        <h2 className="text-3xl font-semibold text-ink md:text-4xl">How an engagement runs</h2>
-        <div className="mt-10 space-y-10">
-          {steps.map((step) => (
-            <div key={step.number} className="flex gap-6">
-              <span className="w-10 shrink-0 text-2xl font-light text-ink/25">{step.number}</span>
-              <div>
-                <h3 className="text-base font-semibold text-ink">{step.title}</h3>
-                <p className="mt-2 max-w-3xl text-sm leading-8 text-ink/74">{step.body}</p>
-              </div>
-            </div>
+        <h2 className="text-3xl font-semibold text-ink md:text-4xl">Three ways to engage</h2>
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-ink/60">
+          Most engagements start with a diagnosis and move into a build. Some stay embedded.
+        </p>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {engagements.map((engagement) => (
+            <article key={engagement.name} className="rounded-2xl border border-ink/12 bg-sand/60 p-6">
+              <h3 className="text-xl font-semibold text-ink">{engagement.name}</h3>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-ink/50">
+                {engagement.length}
+              </p>
+              <p className="mt-4 text-sm leading-7 text-ink/74">{engagement.body}</p>
+            </article>
           ))}
         </div>
       </section>
@@ -160,9 +158,9 @@ export default function RapidContractDevelopment() {
         <div>
           <h2 className="text-3xl font-semibold text-ink md:text-4xl">Who this is for</h2>
           <p className="mt-4 text-sm leading-7 text-ink/72">
-            Rapid contract development works when the client already knows the problem cold. We
-            supply the requirements discipline, the build, and the launch. The client supplies the
-            industry.
+            Rapid contract development works when the client knows their industry cold and has a
+            problem worth fixing. We supply the diagnosis, the build, and the accountability. The
+            client supplies the domain.
           </p>
         </div>
         <div className="space-y-4">
@@ -179,19 +177,19 @@ export default function RapidContractDevelopment() {
 
       <section className="mt-20 rounded-3xl border border-ink/12 bg-white/78 p-8 md:p-10">
         <h2 className="max-w-3xl text-3xl font-semibold text-ink md:text-4xl">
-          Why contract development is fast now
+          Why a small team beats a big one now
         </h2>
         <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
           <p>
-            Traditional custom development was slow because requirements were written far from the
-            work and engineering capacity was expensive. Both constraints have loosened. Stakeholders
-            can sit in the build, and AI-assisted development lets a small team deliver a focused
-            application at a speed and cost that was not practical a few years ago.
+            Traditional consultancies were built when shipping software was slow and expensive.
+            Large teams, long discovery, and decks before code made sense then. AI-assisted
+            development gives a senior engineer the leverage a whole team used to need, so the
+            overhead the old model carried is now the slowest part of the project.
           </p>
           <p>
             Our team includes founders who built companies the old way, on large venture rounds and
-            multi-year timelines. Never9&apos;s consulting engagements are structured to avoid that:
-            short cycles, a clear launch date, and ownership that stays with the client.
+            multi-year timelines. Never9 engagements are structured to avoid that: a diagnosis first,
+            a fixed-scope build, a real launch date, and ownership that stays with the client.
           </p>
         </div>
       </section>
@@ -199,8 +197,8 @@ export default function RapidContractDevelopment() {
       <section className="mt-20 rounded-[36px] border border-ink/15 bg-ink p-10 text-white">
         <h2 className="text-3xl font-semibold md:text-4xl">Bring the problem and the deadline</h2>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">
-          If you know your industry and need a solution built and launched on a real timeline, we
-          can scope it in a single working session. No full spec required.
+          If you know your industry and have a problem that is costing you, we can diagnose it in a
+          single working session and tell you what we would build. No full spec required.
         </p>
         <a
           href="/contact"
