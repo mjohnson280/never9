@@ -1,24 +1,24 @@
 export const metadata = {
   title: 'How We Work | Never9',
   description:
-    'Never9 sits with founders and executives, diagnoses the real problem, builds the fix, and helps you get to market or perform better within it. Two ways to work with us: embedded engagements and studio spinouts.',
+    'Never9 embeds an engineer in your workflow, diagnoses the real problem, and builds the custom fix. Three ways to work with us: embedded engagements, incubated products, and spinouts.',
 };
 
 const steps = [
   {
     number: '01',
-    title: 'Sit with the executives',
-    body: 'We start in the room with the people who own the problem and the people who live it every day. Not an intake form. Not a discovery phase measured in months. A working session where we hear what is slow, what is expensive, and what everyone has stopped complaining about because they assume it cannot change.',
+    title: 'Sit alongside the people doing the work',
+    body: 'We embed in the function, with the executives who own the problem and the operators who live it every day. Not an intake form. Not a discovery phase measured in months. A working session where we hear what is slow, what is repetitive, and what everyone has stopped complaining about because they assume it cannot change.',
   },
   {
     number: '02',
-    title: 'Diagnose the real problem',
-    body: 'The stated problem is rarely the expensive one. We map the workflow as it actually runs, look at the data, and name the thing that is worth fixing. Then we write requirements tight enough to build from: what the product has to do, in what order, and what it can leave out.',
+    title: 'Diagnose the workflow, not the symptom',
+    body: 'The stated problem is rarely the real one. We map how the work actually runs, look at the data, and name the step worth changing. Then we write requirements tight enough to build from: what the solution has to do, in what order, and what it can leave out.',
   },
   {
     number: '03',
-    title: 'Build the fix',
-    body: 'A small senior team builds against those requirements and gets the product into real use fast, while it is still cheap to change. AI-assisted development means the first usable version arrives in weeks, and every week after that is informed by live usage instead of assumptions.',
+    title: 'Build the custom fix',
+    body: 'A small senior team builds around the real workflow and gets the solution into use fast, while it is still cheap to change. AI-assisted development means the first usable version arrives in weeks, and every week after that is informed by live usage instead of assumptions.',
   },
   {
     number: '04',
@@ -29,18 +29,40 @@ const steps = [
 
 const tracks = [
   {
-    eyebrow: 'Engagements',
-    title: 'Embedded with your team',
-    body: 'We join founders and executive teams on contract. You get a product leader and one or two senior engineers who sit inside your company for the length of the build, plus fractional go-to-market and finance leadership when it helps. You own the code, the infrastructure, and the outcome.',
+    eyebrow: 'You own it',
+    title: 'Embedded engagement',
+    body: 'We join your team on contract. An embedded engineer, and a product leader when the scope calls for one, sits inside your function for the length of the build. We re-engineer the workflow, build the custom solution, and hand over the code, the infrastructure, and the accounts.',
     href: '/rapid-contract-development',
     cta: 'Rapid contract development',
   },
   {
-    eyebrow: 'Studio',
-    title: 'Custom builds and incubated spinouts',
-    body: 'We co-build with operators who have a problem worth productizing. The operator brings the domain and the daily use. We bring the build. The result can stay a proprietary edge inside the company, or spin out as a standalone company with shared ownership.',
+    eyebrow: 'We own it, built with you',
+    title: 'Incubated product',
+    body: 'You have a workflow problem that others in your industry share. We build the product in lockstep with you. You get it first and shape it from real use. Never9 releases it as a company under its umbrella.',
+    href: '#studio',
+    cta: 'How incubation works',
+  },
+  {
+    eyebrow: 'We share it',
+    title: 'Spinout',
+    body: 'You bring the domain and the daily use. We bring the build. The result can stay a proprietary edge inside your company, or spin out as a standalone company with shared ownership and an early exit in mind.',
     href: '#studio',
     cta: 'How spinouts work',
+  },
+];
+
+const incubationSteps = [
+  {
+    title: 'A stakeholder names the problem',
+    body: 'An operator inside a real business identifies a workflow problem that off-the-shelf software does not solve. It does not have to be expensive. It has to be persistent, and it has to be shared by others in the industry.',
+  },
+  {
+    title: 'We build in lockstep',
+    body: 'We embed with that stakeholder and build the product against their actual workflow. They are the first user and the loudest critic. Every release is shaped by what happens when they use it.',
+  },
+  {
+    title: 'It becomes a Never9 company',
+    body: 'Once the product works for the stakeholder who lived the problem, Never9 releases it to the rest of the industry as a standalone company. The stakeholder keeps a solution built for them. Never9 keeps the company.',
   },
 ];
 
@@ -84,31 +106,34 @@ export default function HowWeWork() {
           Diagnose the real problem. Build the fix. Get to market, or perform better in it.
         </h1>
         <p className="mt-5 text-base leading-8 text-ink/74">
-          Never9 is a rapid development studio. We sit with founders and executives as part of the
-          team, find the problem that is actually costing them, and build the digital product that
-          fixes it. Then we help you get to market, or perform better within it.
+          Never9 is a rapid development studio. We sit inside an organization as an embedded
+          engineer, find the workflow problem that off-the-shelf software cannot fix, and build the
+          custom solution. Sometimes the client owns it. Sometimes it becomes a Never9 product built
+          in lockstep with them. Either way, we help them get to market, or perform better within it.
         </p>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-ink">
-            The old model was built for a different era.
+            Off-the-shelf software makes you change the work.
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
-              Traditional consultancies were designed when shipping software was slow and expensive.
-              That made large teams, long discovery phases, and decks before code a reasonable way to
-              manage risk. Venture-backed startups ran the same play from the other side: raise a big
-              round, hire an expensive team, spend years building toward an exit that rarely came.
+              Most teams run on SaaS built for the average case. The gaps get filled with
+              spreadsheets, manual handoffs, and workarounds nobody owns. Teams adapt their work to
+              fit the software instead of the other way around.
             </p>
             <p>
-              Off-the-shelf SaaS filled the gap, but it was never quite right. Teams adapted their
-              work to fit the software instead of the other way around.
+              The real gains come from re-engineering the workflow itself, not from layering another
+              tool on top of it. That is process engineering. The open question inside most companies
+              is who actually drives that change. The answer that works is an engineer embedded in
+              the function, someone who can both diagnose the problem and build the fix.
             </p>
             <p>
-              AI-assisted development changes the equation. A small senior team can now diagnose,
-              build, and launch a focused product at a speed and cost that was not practical even two
-              years ago. The overhead the old model carried is now the slowest part of the project.
-              Never9 is built around that shift.
+              Traditional consultancies were designed when shipping software was slow and expensive,
+              so they still bring large teams, long discovery, and decks before code. AI-assisted
+              development makes a different model practical: a small senior team that sits inside the
+              organization, builds a custom solution in weeks, and stays with it until it is doing its
+              job. Never9 is built around that shift.
             </p>
           </div>
         </section>
@@ -123,7 +148,7 @@ export default function HowWeWork() {
               requirements document written six months before launch.
             </p>
             <p>
-              The build is not the finish line. We stay with the product until it is doing its job,
+              The build is not the finish line. We stay with the solution until it is doing its job,
               whether that is getting a new company to market or making an existing operation perform
               better. That changes how we scope, how we build, and what we are willing to promise.
             </p>
@@ -146,21 +171,21 @@ export default function HowWeWork() {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-ink">Two ways to work with Never9</h2>
+          <h2 className="text-2xl font-semibold text-ink">Three ways to work with Never9</h2>
           <p className="mt-3 text-sm leading-7 text-ink/60">
-            Same team, same method. The difference is who owns the result.
+            Same team, same method. The difference is who owns what ships.
           </p>
-          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="mt-6 space-y-4">
             {tracks.map((track) => (
-              <div key={track.title} className="flex flex-col rounded-2xl border border-ink/12 bg-sand/60 p-6">
+              <div key={track.title} className="rounded-2xl border border-ink/12 bg-sand/60 p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-ember">
                   {track.eyebrow}
                 </p>
                 <h3 className="mt-2 font-semibold text-ink">{track.title}</h3>
-                <p className="mt-3 flex-1 text-sm leading-7 text-ink/74">{track.body}</p>
+                <p className="mt-3 text-sm leading-7 text-ink/74">{track.body}</p>
                 <a
                   href={track.href}
-                  className="mt-4 text-sm font-semibold text-ember transition hover:text-ink"
+                  className="mt-4 inline-block text-sm font-semibold text-ember transition hover:text-ink"
                 >
                   {track.cta} &rarr;
                 </a>
@@ -170,10 +195,33 @@ export default function HowWeWork() {
         </section>
 
         <section id="studio" className="mt-12">
-          <h2 className="text-2xl font-semibold text-ink">Studio builds: two outcomes, both valuable</h2>
+          <h2 className="text-2xl font-semibold text-ink">
+            Incubation: how a client workflow becomes a Never9 company
+          </h2>
           <p className="mt-4 text-sm leading-8 text-ink/74">
-            When we co-build with an operator, the product proves itself in their business first.
-            Once it works, the path splits.
+            The products Never9 owns did not start as ideas. Each one started as a specific workflow
+            problem inside a specific business, identified by the people who lived it.
+          </p>
+          <div className="mt-8 space-y-8">
+            {incubationSteps.map((step, index) => (
+              <div key={step.title} className="flex gap-6">
+                <span className="w-10 shrink-0 text-2xl font-light text-ink/25">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div>
+                  <h3 className="text-base font-semibold text-ink">{step.title}</h3>
+                  <p className="mt-2 text-sm leading-8 text-ink/74">{step.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-2xl font-semibold text-ink">Spinouts: two outcomes, both valuable</h2>
+          <p className="mt-4 text-sm leading-8 text-ink/74">
+            When the stakeholder wants a share of what gets built, we co-build it. The product proves
+            itself in their business first. Once it works, the path splits.
           </p>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {outcomes.map((col) => (
@@ -193,7 +241,7 @@ export default function HowWeWork() {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-ink">Why spin out and sell early?</h2>
+          <h2 className="text-2xl font-semibold text-ink">Why build small and sell early?</h2>
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
               The venture model rewards massive exits. Most companies never get there, and by the
@@ -201,10 +249,10 @@ export default function HowWeWork() {
               has closed.
             </p>
             <p>
-              Never9&apos;s studio is built around a different thesis: build something real inside a
-              business that needs it, prove it works, and sell it early for $1&ndash;3M instead of
-              chasing a $50M outcome that may never come. We&apos;ve been on the other side of that
-              equation. We&apos;re not doing it again.
+              Never9&apos;s incubated products and spinouts run on a different thesis: build something
+              real inside a business that needs it, prove it works, and sell it early for $1&ndash;3M
+              instead of chasing a $50M outcome that may never come. We&apos;ve been on the other side
+              of that equation. We&apos;re not doing it again.
             </p>
           </div>
         </section>

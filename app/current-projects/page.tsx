@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Current Projects | Never9',
   description:
-    'Custom builds and incubated spinouts from the Never9 studio, alongside the teams we embed with.',
+    'Products incubated by Never9, each built in lockstep with a stakeholder who lived the workflow problem.',
 };
 
 const projects: {
@@ -30,9 +30,10 @@ export default function CurrentProjects() {
           Current Never9 Projects
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-8 text-ink/70">
-          Custom builds and incubated spinouts from the Never9 studio, alongside the founders and
-          executive teams we embed with. Some are ours. Some are shared. All of them exist to get someone
-          to market, or to help them perform better within it.
+          Products incubated by Never9. Each one started as a workflow problem inside a real
+          business and was built in lockstep with the stakeholder who lived it. Some are ours. Some
+          are shared. All of them exist to get someone to market, or to help them perform better
+          within it.
         </p>
       </div>
 

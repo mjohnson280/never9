@@ -10,14 +10,17 @@ Always run both checks and confirm they exit clean before committing and pushing
 ## Git workflow
 **One branch, `main`, deploys straight to production.** Matt tests in production (see global notes). Do not create or commit to a `stage` branch. Handle all commits and pushes autonomously — Matt does not want to navigate to GitHub or Vercel. Every change goes to `main` and is pushed as soon as the two pre-push checks pass.
 
-## Positioning and voice (set 2026-09-10)
-Never9 is a **rapid development studio** (Minneapolis). Core line, used as the homepage H1 and footer tagline: **"Diagnose the real problem. Build the fix. Get to market, or perform better in it."** We sit with founders and executives as part of the team, diagnose what is actually costing them, build the digital product that fixes it, then help them get to market or perform better within it. **Do not use the "engineer owns whether it works in production" framing**; Matt cut it on 2026-09-10 because it did not read clearly.
+## Positioning and voice (set 2026-09-10, refined 2026-09-11)
+Never9 is a **rapid development studio** (Minneapolis) that solves workflow problems with custom digital solutions. Core line, used as the homepage H1 and footer tagline: **"Diagnose the real problem. Build the fix. Get to market, or perform better in it."**
 
-Two tracks, one method ("same team, same method; the difference is who owns the result"):
-- **Engagements** (consulting arm, `/rapid-contract-development`): embedded with the client's team on contract. Named shapes: Diagnosis (1 to 2 weeks), Build Sprint (fixed scope, weeks), Embedded Team (ongoing, part time, includes fractional product/GTM/finance).
-- **Studio** (`/how-we-work#studio`): custom builds and incubated spinouts co-built with operators; keep as proprietary edge or spin out with shared ownership and an early ($1 to 3M) exit.
+The connective tissue is **embedded engineering** (the forward-deployed engineer idea, from an Aaron Levie post Matt shared: the real gains come from re-engineering the workflow itself, not layering tools on top, and the open question is who drives that; the answer is an engineer embedded in the function). Matt sits inside the organization alongside the people doing the work, diagnoses the workflow, and builds the custom fix. The problem does not have to be expensive, only persistent. Do not lean on "AI agents" as the framing; it is custom development for workflow efficiency whether or not an agent is involved.
 
-Reference point Matt named: Blank Metal (blankmetal.ai, Minneapolis, "anti-consultancy", small senior teams, 90-day production guarantee, outcomes-aligned pricing). Adapted the shape, not the copy. Voice: plain, declarative, anti-deliberation, no consultant jargon. Avoid claiming a specific day-count guarantee unless Matt sets one.
+**One method, three ownership outcomes** ("same team, same method; the difference is who owns what ships"):
+- **You own it: Embedded engagement** (`/rapid-contract-development`). Contract work; client keeps code, infra, accounts. Named shapes: Diagnosis (1 to 2 weeks), Build Sprint (fixed scope, weeks), Embedded Team (ongoing, part time, includes fractional product/GTM/finance).
+- **We own it, built with you: Incubated product** (`/how-we-work#studio`). A stakeholder names a shared industry problem; Never9 builds in lockstep with them (first user, shapes it from real use); Never9 releases it as a company under its umbrella. Example: DockFlow, built with a law firm's feedback. DockFlow is stealth and is NOT named on the site.
+- **We share it: Spinout** (`/how-we-work#studio`). Co-built with an operator; keep as proprietary edge or spin out with shared ownership and an early ($1 to 3M) exit.
+
+Reference point Matt named: Blank Metal (blankmetal.ai, Minneapolis, "anti-consultancy", small senior teams, 90-day production guarantee, outcomes-aligned pricing). Adapted the shape, not the copy. Voice: plain, declarative, anti-deliberation, no consultant jargon. Avoid claiming a specific day-count guarantee or any pricing/free-build terms unless Matt sets them. **Do not use the "engineer owns whether it works in production" framing**; Matt cut it on 2026-09-10 because it did not read clearly.
 
 ## Pages
 - `/` — homepage (`app/page.tsx`); all copy lives in the `pageCopy` object at the top of the file

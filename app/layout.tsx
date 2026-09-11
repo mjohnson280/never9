@@ -4,7 +4,7 @@ import './globals.css';
 
 const siteUrl = getSiteUrl();
 const previewDescription =
-  'Never9 is a rapid development studio in Minneapolis. We sit with founders and executives, diagnose the real problem, build the fix, and help you get to market or perform better within it.';
+  'Never9 is a rapid development studio in Minneapolis. We embed an engineer in your workflow, diagnose the real problem, and build the custom fix. Sometimes you own it. Sometimes it becomes a Never9 product.';
 
 export const metadata: Metadata = {
   title: 'Never9',
@@ -53,7 +53,7 @@ export default function RootLayout({
               <nav className="mt-3 flex flex-col gap-2">
                 <a href="/what-does-never9-mean" className="text-[13px] text-ink/60 transition hover:text-ink">About Never9</a>
                 <a href="/how-we-work" className="text-[13px] text-ink/60 transition hover:text-ink">How We Work</a>
-                <a href="/how-we-work#studio" className="text-[13px] text-ink/60 transition hover:text-ink">Studio &amp; Spinouts</a>
+                <a href="/how-we-work#studio" className="text-[13px] text-ink/60 transition hover:text-ink">Incubation &amp; Spinouts</a>
                 <a href="/contact" className="text-[13px] text-ink/60 transition hover:text-ink">Contact</a>
               </nav>
             </div>

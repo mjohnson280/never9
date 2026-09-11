@@ -3,14 +3,14 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Rapid Contract Development | Never9',
   description:
-    'Rapid contract development from Never9. We embed with founders and executives, diagnose the real problem, build the fix, and help you get to market or perform better within it.',
+    'Rapid contract development from Never9. An embedded engineer sits inside your organization, diagnoses the workflow problem off-the-shelf software cannot fix, and builds the custom solution.',
   alternates: {
     canonical: '/rapid-contract-development',
   },
   openGraph: {
     title: 'Rapid Contract Development | Never9',
     description:
-      'Rapid contract development with a small senior team that sits with executives, diagnoses the real problem, builds the fix, and helps you get to market or perform better within it.',
+      'Rapid contract development with an embedded engineer who sits alongside your team, re-engineers the workflow, and builds the custom fix.',
     url: '/rapid-contract-development',
     type: 'website',
   },
@@ -19,12 +19,12 @@ export const metadata: Metadata = {
 // Edit copy in these objects. Layout/styles are kept below.
 const pillars = [
   {
-    title: 'We sit with the executives',
-    body: 'The engagement starts in the room with the people who own the problem, not with an intake form. Their understanding of the industry, the regulation, and the daily friction is the starting point.',
+    title: 'We embed in the function',
+    body: 'The engagement starts in the room with the executives who own the problem and the operators who live it, not with an intake form. Their understanding of the industry, the regulation, and the daily friction is the starting point.',
   },
   {
-    title: 'We diagnose before we build',
-    body: 'The stated problem is rarely the expensive one. We map the workflow, look at the data, and write requirements tight enough to build from: what the product has to do, in what order, and what it can leave out.',
+    title: 'We re-engineer the workflow, not the tool',
+    body: 'The gains come from changing how the work happens, not from layering another product on the existing flow. We map the workflow, name the step worth changing, and write requirements tight enough to build from. The problem does not have to be expensive. It has to be persistent.',
   },
   {
     title: 'We help you get to market, or perform better in it',
@@ -36,22 +36,23 @@ const engagements = [
   {
     name: 'Diagnosis',
     length: '1 to 2 weeks',
-    body: 'A working session with the executive team and the operators, then a written diagnosis: the real problem, the workflow as it runs today, and requirements for the fix. Useful on its own, and the basis for a fixed-scope build.',
+    body: 'A working session with the executive team and the operators, then a written diagnosis: the workflow as it runs today, the step worth changing, and requirements for the fix. Useful on its own, and the basis for a fixed-scope build.',
   },
   {
     name: 'Build Sprint',
     length: 'Fixed scope, measured in weeks',
-    body: 'A small senior team builds the fix against the diagnosis and gets it into real use on a date the business actually needs. Deployed to a test site early so stakeholders are using the real thing while it is still cheap to change.',
+    body: 'A small senior team builds the custom solution against the diagnosis and gets it into real use on a date the business actually needs. Deployed early so the people doing the work are using the real thing while it is still cheap to change.',
   },
   {
     name: 'Embedded Team',
     length: 'Ongoing, part time',
-    body: 'A product leader and one or two engineers who sit inside your company. Product management, go-to-market, and financial modeling alongside the build, for founders who need a fractional executive team as much as they need code.',
+    body: 'An engineer, and a product leader when the scope calls for one, who sit inside your function on an ongoing basis. Workflow after workflow, plus product management, go-to-market, and financial modeling for founders who need a fractional executive team as much as they need code.',
   },
 ];
 
 const services = [
-  'Diagnosis and product requirements',
+  'Workflow diagnosis and requirements',
+  'Process re-engineering for a single function',
   'Application design and build',
   'Launch, deployment, and go-to-market',
   'Go-to-market plan and positioning',
@@ -60,8 +61,9 @@ const services = [
 ];
 
 const fits = [
+  'An operations team working around SaaS that does not fit, with a persistent workflow problem nobody has had time to fix',
   'A founding team with deep industry expertise and a launch date, but no engineering team yet',
-  'An executive team compensating for software that does not fit the work, with a number they need to move',
+  'An executive team that knows the workflow needs to change and needs someone in the room who can both diagnose it and build the fix',
   'A startup that has shipped a first version and needs the next phase built, and the business case modeled',
 ];
 
@@ -84,12 +86,12 @@ export default function RapidContractDevelopment() {
             Never9 Engagements
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-ink md:text-6xl">
-            Rapid contract development that gets you to market, or performing better in it
+            Rapid contract development, embedded in your workflow
           </h1>
           <p className="max-w-3xl text-lg leading-8 text-ink/74">
-            Never9 embeds with founders and executive teams. We sit with the people who own the
-            problem, diagnose what is actually worth fixing, and build the digital product that fixes
-            it. Then we&apos;ll help you get to market, or perform better within it.
+            Never9 embeds an engineer inside your organization. We sit alongside the people doing
+            the work, find the workflow problem off-the-shelf software cannot fix, and build the
+            custom solution. You own it. We help you get to market, or perform better within it.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -159,8 +161,9 @@ export default function RapidContractDevelopment() {
           <h2 className="text-3xl font-semibold text-ink md:text-4xl">Who this is for</h2>
           <p className="mt-4 text-sm leading-7 text-ink/72">
             Rapid contract development works when the client knows their industry cold and has a
-            problem worth fixing. We supply the diagnosis, the build, and the launch. The
-            client supplies the domain.
+            workflow that needs to change. We supply the diagnosis, the build, and the launch. The
+            client supplies the domain. And if the problem turns out to be one the whole industry
+            shares, there is a second conversation to have about building it as a product.
           </p>
         </div>
         <div className="space-y-4">
@@ -177,14 +180,15 @@ export default function RapidContractDevelopment() {
 
       <section className="mt-20 rounded-3xl border border-ink/12 bg-white/78 p-8 md:p-10">
         <h2 className="max-w-3xl text-3xl font-semibold text-ink md:text-4xl">
-          Why a small team beats a big one now
+          Why an embedded engineer beats another tool
         </h2>
         <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
           <p>
-            Traditional consultancies were built when shipping software was slow and expensive.
-            Large teams, long discovery, and decks before code made sense then. AI-assisted
-            development gives a senior engineer the leverage a whole team used to need, so the
-            overhead the old model carried is now the slowest part of the project.
+            The biggest gains come from changing the workflow itself, not from adding tools to the
+            existing one. The open question inside most companies is who actually drives that
+            change. The answer that works is an engineer embedded in the function. AI-assisted
+            development gives that engineer the leverage a whole team used to need, so the overhead
+            a traditional consultancy carries is now the slowest part of the project.
           </p>
           <p>
             Our team includes founders who built companies the old way, on large venture rounds and
@@ -197,8 +201,9 @@ export default function RapidContractDevelopment() {
       <section className="mt-20 rounded-[36px] border border-ink/15 bg-ink p-10 text-white">
         <h2 className="text-3xl font-semibold md:text-4xl">Bring the problem and the deadline</h2>
         <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">
-          If you know your industry and have a problem that is costing you, we can diagnose it in a
-          single working session and tell you what we would build. No full spec required.
+          If your team is working around software that does not fit, we can diagnose the workflow in
+          a single working session and tell you what we would build. It does not have to be an
+          expensive problem. No full spec required.
         </p>
         <a
           href="/contact"
