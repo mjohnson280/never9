@@ -24,7 +24,7 @@ const pillars = [
   },
   {
     title: 'We re-engineer the workflow, not the tool',
-    body: 'The gains come from changing how the work happens, not from layering another product on the existing flow. We map the workflow, name the step worth changing, and write requirements tight enough to build from. The problem does not have to be expensive. It has to be persistent.',
+    body: 'Layering a tool onto the existing flow captures a fraction of the value. We redesign the workflow around what software can now do, name the step worth changing, and write requirements tight enough to build from. The problem does not have to be expensive. It has to be persistent.',
   },
   {
     title: 'We help you get to market, or perform better in it',
@@ -184,11 +184,12 @@ export default function RapidContractDevelopment() {
         </h2>
         <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
           <p>
-            The biggest gains come from changing the workflow itself, not from adding tools to the
-            existing one. The open question inside most companies is who actually drives that
-            change. The answer that works is an engineer embedded in the function. AI-assisted
-            development gives that engineer the leverage a whole team used to need, so the overhead
-            a traditional consultancy carries is now the slowest part of the project.
+            The biggest gains come from redesigning the workflow around what software can now do,
+            not from adding tools to the existing one. That is a reason to build custom and
+            collaboratively rather than buy off the shelf and adapt inside it, and the cost, speed,
+            and risk of doing so have collapsed. The open question inside most companies is who
+            drives that change. The answer that works is an engineer embedded in the function.
+            AI-assisted development gives that engineer the leverage a whole team used to need.
           </p>
           <p>
             Our team includes founders who built companies the old way, on large venture rounds and

@@ -114,7 +114,7 @@ export default function HowWeWork() {
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-ink">
-            Off-the-shelf software makes you change the work.
+            Do not adapt the work to the tool. Redesign the work around what is now possible.
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
@@ -123,17 +123,20 @@ export default function HowWeWork() {
               fit the software instead of the other way around.
             </p>
             <p>
-              The real gains come from re-engineering the workflow itself, not from layering another
-              tool on top of it. That is process engineering. The open question inside most companies
-              is who actually drives that change. The answer that works is an engineer embedded in
-              the function, someone who can both diagnose the problem and build the fix.
+              Layering AI or another tool onto an existing workflow captures a fraction of the value.
+              The far larger return comes when the workflow itself is redesigned around what software
+              can now do. That is a reason to build custom and collaboratively, not to buy off the
+              shelf and adapt inside it. The open question inside most companies is who actually
+              drives that change. The answer that works is an engineer embedded in the function,
+              someone who can both diagnose the problem and build the fix.
             </p>
             <p>
-              Traditional consultancies were designed when shipping software was slow and expensive,
-              so they still bring large teams, long discovery, and decks before code. AI-assisted
-              development makes a different model practical: a small senior team that sits inside the
-              organization, builds a custom solution in weeks, and stays with it until it is doing its
-              job. Never9 is built around that shift.
+              The cost, speed, and risk of doing that have collapsed. Traditional consultancies were
+              designed when shipping software was slow and expensive, so they still bring large teams,
+              long discovery, and decks before code. AI-assisted development makes a different model
+              practical: a small senior team that sits inside the organization, redesigns the
+              workflow, ships a custom solution in weeks, and stays with it until it is doing its job.
+              Never9 is built around that shift.
             </p>
           </div>
         </section>
@@ -201,6 +204,15 @@ export default function HowWeWork() {
           <p className="mt-4 text-sm leading-8 text-ink/74">
             The products Never9 owns did not start as ideas. Each one started as a specific workflow
             problem inside a specific business, identified by the people who lived it.
+          </p>
+          <p className="mt-4 text-sm leading-8 text-ink/74">
+            <a href="https://dockitflo.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ember transition hover:text-ink">DockItFlo</a>{' '}
+            is the example. A large litigation firm was processing PACER notices by hand: court
+            emails read one at a time, deadlines keyed into calendars, errors caught late if at all.
+            Rather than bolt a tool onto that process, we redesigned it with the firm and built
+            DockItFlo against their real docket. It now reads the notice, extracts the dates, and
+            writes them to the attorney&apos;s calendar with a human in the loop. The firm got the fix.
+            Never9 got a company.
           </p>
           <div className="mt-8 space-y-8">
             {incubationSteps.map((step, index) => (

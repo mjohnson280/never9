@@ -21,11 +21,11 @@ const pageCopy = {
     ],
   },
   problem: {
-    title: 'Off-the-shelf software makes you change the work. We change the software.',
+    title: 'Do not adapt the work to the tool. Redesign the work around what is now possible.',
     points: [
       'Most teams run on SaaS built for the average case. The gaps get filled with spreadsheets, manual handoffs, and workarounds nobody owns. The problem does not have to be expensive to be worth fixing. It has to be persistent.',
-      'The real gains come from re-engineering the workflow itself, not from layering another tool on top of it. That is process engineering, and it needs someone embedded in the function who can both diagnose the problem and build the fix.',
-      'AI-assisted development makes that practical. A small senior team can now sit inside an organization, build a custom solution in weeks, and stay with it until it is doing its job. Never9 is built around that shift.',
+      'Layering AI or another tool onto an existing workflow captures a fraction of the value. The far larger return comes when the workflow itself is redesigned around what software can now do. That is a reason to build custom and collaboratively, not to buy off the shelf and adapt inside it.',
+      'The cost, speed, and risk of doing that have collapsed. A small senior team embedded in the function can redesign a workflow, ship a custom solution in weeks, and stay with it until it is doing its job. Never9 is built around that shift.',
     ],
   },
   nameStory: {
@@ -68,7 +68,7 @@ const pageCopy = {
       {
         eyebrow: 'We own it, built with you',
         title: 'Incubated product',
-        body: 'You have a workflow problem that others in your industry share. We build the product in lockstep with you: you get it first and shape it from real use, and Never9 releases it as a company under its umbrella.',
+        body: 'You have a workflow problem that others in your industry share. We build the product in lockstep with you: you get it first and shape it from real use, and Never9 releases it as a company under its umbrella. DockItFlo, built with a large litigation firm, started this way.',
         cta: 'How incubation works',
         href: '/how-we-work#studio',
       },
@@ -84,7 +84,7 @@ const pageCopy = {
   whyNow: {
     title: 'Why an embedded engineer beats another tool',
     points: [
-      'The biggest gains from AI come from changing the workflow itself, not from adding tools to the existing one. The open question inside most companies is who actually drives that change. The answer that works is an engineer embedded in the function.',
+      'The biggest gains from AI come from redesigning the workflow around it, not from dropping it into the existing one. The open question inside most companies is who actually drives that change. The answer that works is an engineer embedded in the function, starting fresh from how the work should happen.',
       'AI coding tools give that engineer the leverage a whole team used to need. The constraint is no longer hands on keyboards. It is knowing which step to change and having someone in the room who can change it.',
       'Never9 gives organizations the effect of an embedded product and engineering team without hiring one first, and without the overhead a traditional consultancy bills for.',
     ],
