@@ -30,6 +30,13 @@ Reference point Matt named: Blank Metal (blankmetal.ai, Minneapolis, "anti-consu
 - `/how-we-work`, `/what-does-never9-mean`, `/current-projects`, `/contact`
 - `app/sitemap.ts` lists every page; add new routes there.
 
+## Incubated projects (status board)
+Each project's own `CLAUDE.md` session log is the source of truth. This board holds one line per project so a Never9 session knows the state of the portfolio without opening the other repos. When something material changes in a project (launch, pivot, blocked, new stakeholder), update its line here in the same session.
+
+- **DockItFlo** (`C:\Users\mjohn\Desktop\Projects\dockflow`) — PACER notice calendaring for litigation firms, built with a large litigation firm. Public at dockitflo.com; named on the site. Status: live, active development.
+- **Fit Vaulted** (`C:\Users\mjohn\Desktop\Projects\Fit Vaulted`) — incubated product, stood up 2026-09-11. Repo, Vercel, Supabase, and env vars done; DNS pending at GoDaddy; concept build plan pending. Not on the site yet (add to Current Projects when Matt says it is public). Handoff: `docs/HANDOFF.md` in that repo.
+- **Spider Ag** (`C:\Users\mjohn\Desktop\Projects\spiderag`) — consulting engagement, not an incubated product. Not named on the site.
+
 ## Standing up new projects
 Never9 is the launchpad for every incubated project. `/incubate-project` (`.claude/skills/incubate-project/SKILL.md`) runs `scripts/new-project.mjs`, which scaffolds Next.js 16 with the hygiene files in `templates/incubated-project/`, creates the private GitHub repo, the Vercel project in the Pro team, the first production deploy, and attaches the domain. Supabase and DNS are the two follow-up steps in the skill. First used for Fit Vaulted on 2026-09-11. `templates/` is excluded from this site's tsconfig because it targets Next.js 16.
 
