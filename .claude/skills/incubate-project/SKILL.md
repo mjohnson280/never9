@@ -43,8 +43,7 @@ Vercel verifies and issues SSL automatically once the records resolve. `vercel d
    ```
    PW=$(node -e "console.log(require('crypto').randomBytes(24).toString('base64url'))")
    npx supabase projects create <slug> --org-id ozjswhayzunzstmdfbcr --region us-east-2 --db-password "$PW" | sed "s/$PW/<redacted>/g"
-   printf 'SUPABASE_DB_PASSWORD=%s
-' "$PW" > .env.local
+   printf 'SUPABASE_DB_PASSWORD=%s\n' "$PW" > .env.local
    ```
 3. `npx supabase projects api-keys --project-ref <ref> -o json` returns `anon` and `service_role`. Append `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_PROJECT_REF`, and `NEXT_PUBLIC_APP_URL` to `.env.local` with a node one-liner so no value is printed. Then `node scripts/vercel-env-sync.mjs --env production --scope mjohnson280-8919s-projects` and confirm names with `vercel env ls production`.
 4. `npx supabase link --project-ref <ref>` creates `supabase/config.toml`; add `supabase/.temp` to `.gitignore` and create `supabase/migrations/`. New tables need explicit GRANTs (see the DockItFlo CLAUDE.md standard block).
