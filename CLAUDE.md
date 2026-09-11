@@ -30,6 +30,9 @@ Reference point Matt named: Blank Metal (blankmetal.ai, Minneapolis, "anti-consu
 - `/how-we-work`, `/what-does-never9-mean`, `/current-projects`, `/contact`
 - `app/sitemap.ts` lists every page; add new routes there.
 
+## Standing up new projects
+Never9 is the launchpad for every incubated project. `/incubate-project` (`.claude/skills/incubate-project/SKILL.md`) runs `scripts/new-project.mjs`, which scaffolds Next.js 16 with the hygiene files in `templates/incubated-project/`, creates the private GitHub repo, the Vercel project in the Pro team, the first production deploy, and attaches the domain. Supabase and DNS are the two follow-up steps in the skill. First used for Fit Vaulted on 2026-09-11. `templates/` is excluded from this site's tsconfig because it targets Next.js 16.
+
 ## Contact form
 - **Page:** `app/contact/page.tsx` — client-side form with fields: name, industry, pain point (1500 char max), email, phone
 - **API route:** `app/api/contact/route.ts` — validates all fields, sends email via Resend

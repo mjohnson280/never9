@@ -1,0 +1,32 @@
+#!/bin/sh
+# Pre-commit guard: block env files and obvious secrets from entering history.
+# Installed by `npm install` via the "prepare" script (git config core.hooksPath .githooks).
+# Bypass only with a deliberate `git commit --no-verify` and a reason.
+
+fail=0
+
+# 1. Refuse any staged .env file other than the template.
+for f in $(git diff --cached --name-only --diff-filter=ACMR); do
+  base=$(basename "$f")
+  case "$base" in
+    .env.example) ;;
+    .env|.env.*)
+      echo "BLOCKED: $f is an environment file. Real keys never go in git."
+      fail=1 ;;
+  esac
+done
+
+# 2. Scan staged content for common credential shapes.
+patterns='SUPABASE_SERVICE_ROLE_KEY=ey|sk-ant-[A-Za-z0-9_-]{20,}|sk_live_[A-Za-z0-9]{16,}|AKIA[0-9A-Z]{16}|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|ghp_[A-Za-z0-9]{36}|postgres(ql)?://[^:]+:[^@]+@'
+hits=$(git diff --cached --diff-filter=ACMR -U0 -- . ':!.env.example' ':!.githooks/pre-commit' | grep -E '^\+' | grep -E -n "$patterns")
+if [ -n "$hits" ]; then
+  echo "BLOCKED: staged changes contain what looks like a credential:"
+  echo "$hits" | cut -c1-160
+  fail=1
+fi
+
+if [ "$fail" -ne 0 ]; then
+  echo
+  echo "Move the value to .env.local, add its name to .env.example, and re-stage."
+  exit 1
+fi
