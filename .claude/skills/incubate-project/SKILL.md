@@ -37,11 +37,17 @@ Vercel verifies and issues SSL automatically once the records resolve. `vercel d
 
 ## 3. Supabase (pick one, ask Matt if not already decided)
 
-**Option A: Matt's own Supabase organization** (how DockItFlo is set up; keeps every Never9 product under one Supabase org and one bill).
-1. Matt runs `! npx supabase login` in the Claude prompt (opens a browser, stores a token locally), or creates a personal access token at supabase.com/dashboard/account/tokens and pastes it into the session as `SUPABASE_ACCESS_TOKEN`.
-2. Then: `npx supabase orgs list` to get the org id, and `npx supabase projects create "<name>" --org-id <id> --region us-east-1 --db-password "<generated>"`. Pick the region deliberately; it is permanent.
-3. `npx supabase projects api-keys --project-ref <ref>` for the URL and keys. Write them to `.env.local` (never the repo), fill `.env.example` names, then `node scripts/vercel-env-sync.mjs --env production` from the project folder.
-4. Migrations live in `supabase/migrations/` in the project. New tables need explicit GRANTs (see the DockItFlo CLAUDE.md standard block).
+**Option A: Matt's own Supabase organization** (the default; how DockItFlo and Fit Vaulted are set up; one org, one bill). Org `mjohnson280`, id `ozjswhayzunzstmdfbcr`. Region: `us-east-2` to match DockItFlo unless there is a reason otherwise; region is permanent.
+1. Check auth with `npx supabase orgs list`. If it errors, Matt must run `npx supabase login` in a regular terminal window outside Claude Code (the CLI refuses the browser flow in a non-TTY session, and the `!` prefix in the prompt is also non-TTY). The token is stored on the machine; never paste it into chat.
+2. From the project folder, with a generated password that never touches the chat:
+   ```
+   PW=$(node -e "console.log(require('crypto').randomBytes(24).toString('base64url'))")
+   npx supabase projects create <slug> --org-id ozjswhayzunzstmdfbcr --region us-east-2 --db-password "$PW" | sed "s/$PW/<redacted>/g"
+   printf 'SUPABASE_DB_PASSWORD=%s
+' "$PW" > .env.local
+   ```
+3. `npx supabase projects api-keys --project-ref <ref> -o json` returns `anon` and `service_role`. Append `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_PROJECT_REF`, and `NEXT_PUBLIC_APP_URL` to `.env.local` with a node one-liner so no value is printed. Then `node scripts/vercel-env-sync.mjs --env production --scope mjohnson280-8919s-projects` and confirm names with `vercel env ls production`.
+4. `npx supabase link --project-ref <ref>` creates `supabase/config.toml`; add `supabase/.temp` to `.gitignore` and create `supabase/migrations/`. New tables need explicit GRANTs (see the DockItFlo CLAUDE.md standard block).
 
 **Option B: Vercel Marketplace** (billed through Vercel, provisioned in one command, env vars injected automatically). From the project folder: `vercel integration add supabase --yes --no-claim`, then `vercel env pull --yes`. Creates the project under a Vercel-managed Supabase org, separate from Matt's existing one.
 
