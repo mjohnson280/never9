@@ -34,7 +34,7 @@ Reference point Matt named: Blank Metal (blankmetal.ai, Minneapolis, "anti-consu
 Each project's own `CLAUDE.md` session log is the source of truth. This board holds one line per project so a Never9 session knows the state of the portfolio without opening the other repos. When something material changes in a project (launch, pivot, blocked, new stakeholder), update its line here in the same session.
 
 - **DockItFlo** (`C:\Users\mjohn\Desktop\Projects\dockflow`) — PACER notice calendaring for litigation firms, built with a large litigation firm. Public at dockitflo.com; named on the site. Status: live, active development.
-- **Fit Vaulted** (`C:\Users\mjohn\Desktop\Projects\Fit Vaulted`) — incubated product, stood up 2026-09-11. Repo, Vercel, Supabase, and env vars done; DNS pending at GoDaddy; concept build plan pending. Not on the site yet (add to Current Projects when Matt says it is public). Handoff: `docs/HANDOFF.md` in that repo.
+- **Fit Vaulted** (`C:\Users\mjohn\Desktop\Projects\Fit Vaulted`) — incubated product, stood up 2026-09-11. Personal running-analytics system on Matt's Garmin data, with a coach access layer; build plan v0.1 filed 2026-09-11 (Phase 0 through Sep 30, coach stub by January, season-ready April 2027). Repo, Vercel, Supabase, and env vars done; DNS pending at GoDaddy; Matt to decide where the Python metrics engine lives. Not on the site yet (add to Current Projects when Matt says it is public). Handoff: `docs/HANDOFF.md` in that repo.
 - **Spider Ag** (`C:\Users\mjohn\Desktop\Projects\spiderag`) — consulting engagement, not an incubated product. Not named on the site.
 
 ## Standing up new projects
