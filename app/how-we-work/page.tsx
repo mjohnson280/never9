@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'How We Work | Never9',
   description:
-    'Never9 embeds an engineer in your workflow, diagnoses the real problem, and builds the custom fix. Three ways to work with us: embedded engagements, incubated products, and spinouts.',
+    'Never9 is a rapid development studio and incubator. We embed an engineer in your workflow, find the problem, and build the custom fix. Keep it as your edge, or launch it: embedded engagements, incubated products, and spinouts.',
 };
 
 const steps = [
@@ -22,8 +22,8 @@ const steps = [
   },
   {
     number: '04',
-    title: 'Get to market, or perform better in it',
-    body: 'The fix ships, and we stay with it until it is doing its job. For a new product, that means reaching customers. For an operation, that means running faster, with fewer workarounds and a number that actually moved.',
+    title: 'Get to market, or operate more efficiently within it',
+    body: 'The fix ships, and we stay with it until it is doing its job. For a new product, that means reaching customers. For an operation, that means running with fewer hands, fewer workarounds, and a number that actually moved.',
   },
 ];
 
@@ -31,21 +31,21 @@ const tracks = [
   {
     eyebrow: 'You own it',
     title: 'Embedded engagement',
-    body: 'We join your team on contract. An embedded engineer, and a product leader when the scope calls for one, sits inside your function for the length of the build. We re-engineer the workflow, build the custom solution, and hand over the code, the infrastructure, and the accounts.',
+    body: 'We join your team on contract. An embedded engineer, and a product leader when the scope calls for one, sits inside your function for the length of the build. We re-engineer the workflow, build the custom solution, and hand over the code, the infrastructure, and the accounts. For founders, we tie the build to a full go-to-market plan.',
     href: '/rapid-contract-development',
     cta: 'Rapid contract development',
   },
   {
     eyebrow: 'We own it, built with you',
     title: 'Incubated product',
-    body: 'You have a workflow problem that others in your industry share. We build the product in lockstep with you. You get it first and shape it from real use. Never9 releases it as a company under its umbrella.',
+    body: 'Your problem is one the whole industry shares, and you want the fix more than you want to run a software company. We build the product in lockstep with you. You get it first and shape it from real use. Never9 launches it as a company under its umbrella.',
     href: '#studio',
     cta: 'How incubation works',
   },
   {
     eyebrow: 'We share it',
     title: 'Spinout',
-    body: 'You bring the domain and the daily use. We bring the build. The result can stay a proprietary edge inside your company, or spin out as a standalone company with shared ownership and an early exit in mind.',
+    body: 'You bring the domain and the daily use. We bring the build. Together we decide whether the result stays a proprietary edge inside your company or spins out as a standalone company with shared ownership and an early exit in mind.',
     href: '#studio',
     cta: 'How spinouts work',
   },
@@ -103,18 +103,19 @@ export default function HowWeWork() {
           How We Work
         </p>
         <h1 className="mt-3 text-4xl font-semibold leading-tight text-ink md:text-5xl">
-          Diagnose the real problem. Build the fix. Get to market, or perform better in it.
+          Get to market, or operate more efficiently within it.
         </h1>
         <p className="mt-5 text-base leading-8 text-ink/74">
-          Never9 is a rapid development studio. We sit inside an organization as an embedded
-          engineer, find the workflow problem that off-the-shelf software cannot fix, and build the
-          custom solution. Sometimes the client owns it. Sometimes it becomes a Never9 product built
-          in lockstep with them. Either way, we help them get to market, or perform better within it.
+          Never9 is a rapid development studio and incubator. We sit inside an organization as an
+          embedded engineer, find the workflow problem, and build the custom fix fast. We can build
+          it for the client and tie it to a full go-to-market plan. Or, when the problem is one the
+          whole industry shares, we incubate the solution with them under the Never9 umbrella.
+          Either way, we help them get to market, or operate more efficiently within it.
         </p>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-ink">
-            Do not adapt the work to the tool. Redesign the work around what is now possible.
+            Code is cheap now. Solved problems are not.
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
@@ -123,20 +124,21 @@ export default function HowWeWork() {
               fit the software instead of the other way around.
             </p>
             <p>
-              Layering AI or another tool onto an existing workflow captures a fraction of the value.
-              The far larger return comes when the workflow itself is redesigned around what software
-              can now do. That is a reason to build custom and collaboratively, not to buy off the
-              shelf and adapt inside it. The open question inside most companies is who actually
-              drives that change. The answer that works is an engineer embedded in the function,
-              someone who can both diagnose the problem and build the fix.
+              When building software was expensive, that was the rational call. It is not anymore.
+              A small senior team can build a custom fix in weeks for less than the workarounds cost
+              in a year. The value is no longer in the code. It is in the problem the code solves,
+              and in knowing which problem to solve. That is why we embed instead of quoting: the
+              people doing the work know the problem, and we know what software can now do.
             </p>
             <p>
-              The cost, speed, and risk of doing that have collapsed. Traditional consultancies were
-              designed when shipping software was slow and expensive, so they still bring large teams,
-              long discovery, and decks before code. AI-assisted development makes a different model
-              practical: a small senior team that sits inside the organization, redesigns the
-              workflow, ships a custom solution in weeks, and stays with it until it is doing its job.
-              Never9 is built around that shift.
+              Layering AI or another tool onto an existing workflow captures a fraction of the value.
+              The far larger return comes when the workflow itself is redesigned around what software
+              can now do. Do not adapt the work to the tool. Redesign the work around what is now
+              possible. Traditional consultancies were designed when shipping software was slow and
+              expensive, so they still bring large teams, long discovery, and decks before code.
+              Never9 is built around the opposite: a small senior team that sits inside the
+              organization, redesigns the workflow, ships in weeks, and stays with it until it is
+              doing its job.
             </p>
           </div>
         </section>
@@ -174,9 +176,10 @@ export default function HowWeWork() {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold text-ink">Three ways to work with Never9</h2>
+          <h2 className="text-2xl font-semibold text-ink">Keep it, or launch it</h2>
           <p className="mt-3 text-sm leading-7 text-ink/60">
-            Same team, same method. The difference is who owns what ships.
+            Three ways to work with Never9. Same team, same method. The difference is who owns what
+            ships.
           </p>
           <div className="mt-6 space-y-4">
             {tracks.map((track) => (
@@ -202,8 +205,11 @@ export default function HowWeWork() {
             Incubation: how a client workflow becomes a Never9 company
           </h2>
           <p className="mt-4 text-sm leading-8 text-ink/74">
-            The products Never9 owns did not start as ideas. Each one started as a specific workflow
-            problem inside a specific business, identified by the people who lived it.
+            Your workflow problem is probably shared. A persistent gap in one company is almost
+            always a gap in what the market sells, and the people who live it are the first to see
+            it. That is why the products Never9 owns did not start as ideas. Each one started as a
+            specific workflow problem inside a specific business, identified by the people who lived
+            it, and shared by the rest of their industry.
           </p>
           <p className="mt-4 text-sm leading-8 text-ink/74">
             <a href="https://dockitflo.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-ember transition hover:text-ink">DockItFlo</a>{' '}

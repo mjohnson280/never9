@@ -4,7 +4,7 @@ import './globals.css';
 
 const siteUrl = getSiteUrl();
 const previewDescription =
-  'Never9 is a rapid development studio in Minneapolis. We embed an engineer in your workflow, diagnose the real problem, and build the custom fix. Sometimes you own it. Sometimes it becomes a Never9 product.';
+  'Never9 is a rapid development studio and incubator in Minneapolis. We embed an engineer in your workflow, find the problem, and build the custom fix. Keep it as your edge, or launch it with us as a Never9 company.';
 
 export const metadata: Metadata = {
   title: 'Never9',
@@ -40,8 +40,8 @@ export default function RootLayout({
             <div>
               <p className="text-sm font-semibold text-ink">Never9</p>
               <p className="mt-2 text-xs leading-6 text-ink/50">
-                A rapid development studio in Minneapolis. Diagnose the real problem. Build the fix.
-                Get to market, or perform better in it.
+                A rapid development studio and incubator in Minneapolis. Find the workflow problem.
+                Build the fix. Get to market, or operate more efficiently within it.
               </p>
             </div>
 

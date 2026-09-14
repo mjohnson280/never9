@@ -27,8 +27,8 @@ const pillars = [
     body: 'Layering a tool onto the existing flow captures a fraction of the value. We redesign the workflow around what software can now do, name the step worth changing, and write requirements tight enough to build from. The problem does not have to be expensive. It has to be persistent.',
   },
   {
-    title: 'We help you get to market, or perform better in it',
-    body: 'The build is not the finish line. We stay with the product until it is doing its job: a launch that reaches customers, or an operation that runs faster with fewer workarounds.',
+    title: 'We help you get to market, or operate more efficiently within it',
+    body: 'The build is not the finish line. For founders, we tie it to a full go-to-market plan. For operators, we stay with it until the operation runs with fewer hands and fewer workarounds. Either way, you own what we build.',
   },
 ];
 
@@ -91,7 +91,8 @@ export default function RapidContractDevelopment() {
           <p className="max-w-3xl text-lg leading-8 text-ink/74">
             Never9 embeds an engineer inside your organization. We sit alongside the people doing
             the work, find the workflow problem off-the-shelf software cannot fix, and build the
-            custom solution. You own it. We help you get to market, or perform better within it.
+            custom solution. You own it. We help you get to market, or operate more efficiently
+            within it.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -162,8 +163,9 @@ export default function RapidContractDevelopment() {
           <p className="mt-4 text-sm leading-7 text-ink/72">
             Rapid contract development works when the client knows their industry cold and has a
             workflow that needs to change. We supply the diagnosis, the build, and the launch. The
-            client supplies the domain. And if the problem turns out to be one the whole industry
-            shares, there is a second conversation to have about building it as a product.
+            client supplies the domain. And because a persistent workflow problem is rarely unique
+            to one company, there is often a second conversation to have: keep the fix as your
+            competitive edge, or partner with us to launch it as a product.
           </p>
         </div>
         <div className="space-y-4">
@@ -184,11 +186,11 @@ export default function RapidContractDevelopment() {
         </h2>
         <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
           <p>
-            The biggest gains come from redesigning the workflow around what software can now do,
-            not from adding tools to the existing one. That is a reason to build custom and
-            collaboratively rather than buy off the shelf and adapt inside it, and the cost, speed,
-            and risk of doing so have collapsed. The open question inside most companies is who
-            drives that change. The answer that works is an engineer embedded in the function.
+            Code is cheap now. When it was expensive, buying off the shelf and adapting inside it
+            was the rational call. Today a custom fix built around your actual workflow costs less
+            than the workarounds it replaces, and the biggest gains come from redesigning the
+            workflow around what software can now do, not from adding tools to the existing one.
+            The open question inside most companies is who drives that change. The answer that works is an engineer embedded in the function.
             AI-assisted development gives that engineer the leverage a whole team used to need.
           </p>
           <p>

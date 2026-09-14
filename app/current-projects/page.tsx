@@ -57,9 +57,9 @@ export default function CurrentProjects() {
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-8 text-ink/70">
           Products incubated by Never9. Each one started as a workflow problem inside a real
-          business and was built in lockstep with the stakeholder who lived it. Some are ours. Some
-          are shared. All of them exist to get someone to market, or to help them perform better
-          within it.
+          business, shared by the rest of that industry, and built in lockstep with the stakeholder
+          who lived it. Some are ours. Some are shared. All of them exist to get someone to market,
+          or to help them operate more efficiently within it.
         </p>
       </div>
 

@@ -5,27 +5,28 @@ const pageCopy = {
     cta: 'Start a Conversation',
   },
   hero: {
-    title: 'Diagnose the real problem. Build the fix. Get to market, or perform better in it.',
-    body: 'Never9 is a rapid development studio. We sit inside your organization as an embedded engineer, find the workflow problem that off-the-shelf software cannot fix, and build the custom solution. Sometimes you own it. Sometimes it becomes a Never9 product built in lockstep with you. Either way, we will help you get to market, or perform better within it.',
+    title: 'Get to market, or operate more efficiently within it.',
+    body: 'Never9 is a rapid development studio and incubator. We sit inside your organization as an embedded engineer, find the workflow problem, and build the custom fix fast. We can build it for you and tie it to a full go-to-market plan. Or, when the problem is one your whole industry shares, we incubate the solution with you under the Never9 umbrella. Either way, we will help you get to market, or operate more efficiently within it.',
     primaryCta: 'Start a Conversation',
     secondaryCta: 'See How We Work',
     supportLine:
-      'Embedded in your workflow | Small senior teams | Built to ship',
+      'Embedded engineer | Custom build in weeks | Keep it, or launch it',
   },
   model: {
     title: 'The Never9 Model',
     items: [
-      { label: 'Who we work with', value: 'Founders, executives, and the teams doing the work' },
-      { label: 'What we build', value: 'Custom digital solutions for the workflow problems SaaS cannot fix' },
-      { label: 'What you get', value: 'A way to market, or a better way to perform in it' },
+      { label: 'Who we work with', value: 'Operators with a persistent workflow problem, and founders with a launch date' },
+      { label: 'What we build', value: 'Custom solutions for the workflow problems off-the-shelf software cannot fix' },
+      { label: 'What you get', value: 'A way to market, or a more efficient way to operate in it' },
+      { label: 'What happens next', value: 'Keep it as your edge, or launch it to everyone who shares the problem' },
     ],
   },
   problem: {
-    title: 'Do not adapt the work to the tool. Redesign the work around what is now possible.',
+    title: 'Code is cheap now. Solved problems are not.',
     points: [
       'Most teams run on SaaS built for the average case. The gaps get filled with spreadsheets, manual handoffs, and workarounds nobody owns. The problem does not have to be expensive to be worth fixing. It has to be persistent.',
-      'Layering AI or another tool onto an existing workflow captures a fraction of the value. The far larger return comes when the workflow itself is redesigned around what software can now do. That is a reason to build custom and collaboratively, not to buy off the shelf and adapt inside it.',
-      'The cost, speed, and risk of doing that have collapsed. A small senior team embedded in the function can redesign a workflow, ship a custom solution in weeks, and stay with it until it is doing its job. Never9 is built around that shift.',
+      'When building software was expensive, buying off the shelf and living with the gaps was the rational call. It is not anymore. A small senior team can build a custom fix in weeks for less than the workarounds cost in a year. The value is no longer in the code. It is in the problem the code solves.',
+      'Layering AI or another tool onto an existing workflow captures a fraction of the value. The far larger return comes when the workflow itself is redesigned around what software can now do. Do not adapt the work to the tool. Redesign the work around what is now possible. Never9 is built around that shift.',
     ],
   },
   nameStory: {
@@ -49,43 +50,50 @@ const pageCopy = {
         body: 'A small senior team builds a focused solution around the real workflow and gets it into use fast, while it is still cheap to change.',
       },
       {
-        title: 'Get to market, or perform better in it',
-        body: 'The fix ships, and we stay with it until it is doing its job: a product that reaches customers, or an operation that runs faster, with fewer workarounds and a number that moved.',
+        title: 'Get to market, or operate more efficiently within it',
+        body: 'The fix ships, and we stay with it until it is doing its job: a product that reaches customers, or an operation that runs with fewer hands, fewer workarounds, and a number that moved.',
       },
     ],
   },
+  shared: {
+    title: 'Your workflow problem is probably shared.',
+    points: [
+      'If your team keys court deadlines into a calendar by hand, so does every litigation firm in the country. A persistent workflow problem is almost never unique to one company. It is a gap in what the market sells, and the people who live it every day are the first to see it.',
+      'That is why Never9 is an incubator as well as a studio. We work together to solve your problem first. Once the fix is doing its job, you choose what happens next: keep it as a competitive advantage inside your operation, or partner with us to launch it as a product for everyone who shares the problem. DockItFlo started as a fix for one firm and became a company.',
+    ],
+  },
   tracks: {
-    title: 'Three ways to work with Never9',
-    intro: 'Same team, same method. The difference is who owns what ships.',
+    title: 'Keep it, or launch it',
+    intro: 'Three ways to work with Never9. Same team, same method. The difference is who owns what ships.',
     items: [
       {
         eyebrow: 'You own it',
         title: 'Embedded engagement',
-        body: 'We join your team on contract as an embedded engineer, re-engineer the workflow, build the custom solution, and hand it over. Fractional product, go-to-market, and finance leadership when it helps. You own the code, the accounts, and the result.',
+        body: 'We join your team on contract as an embedded engineer, re-engineer the workflow, build the custom solution, and hand it over. For founders, we tie the build to a full go-to-market plan, with fractional product and finance leadership when it helps. You own the code, the accounts, and the advantage.',
         cta: 'Rapid contract development',
         href: '/rapid-contract-development',
       },
       {
         eyebrow: 'We own it, built with you',
         title: 'Incubated product',
-        body: 'You have a workflow problem that others in your industry share. We build the product in lockstep with you: you get it first and shape it from real use, and Never9 releases it as a company under its umbrella. DockItFlo, built with a large litigation firm, started this way.',
+        body: 'Your problem is one the whole industry shares, and you want the fix more than you want to run a software company. We build the product in lockstep with you: you get it first and shape it from real use, and Never9 launches it as a company under its umbrella. DockItFlo, built with a large litigation firm, started this way.',
         cta: 'How incubation works',
         href: '/how-we-work#studio',
       },
       {
         eyebrow: 'We share it',
         title: 'Spinout',
-        body: 'You bring the domain and the daily use. We bring the build. Keep the result as a proprietary edge inside your company, or spin it out as a standalone company with shared ownership and an early exit in mind.',
+        body: 'You bring the domain and the daily use. We bring the build. Together we decide whether the result stays a proprietary edge inside your company or spins out as a standalone company with shared ownership and an early exit in mind.',
         cta: 'How spinouts work',
         href: '/how-we-work#studio',
       },
     ],
   },
   whyNow: {
-    title: 'Why an embedded engineer beats another tool',
+    title: 'Code got cheap. Knowing what to build did not.',
     points: [
       'The biggest gains from AI come from redesigning the workflow around it, not from dropping it into the existing one. The open question inside most companies is who actually drives that change. The answer that works is an engineer embedded in the function, starting fresh from how the work should happen.',
-      'AI coding tools give that engineer the leverage a whole team used to need. The constraint is no longer hands on keyboards. It is knowing which step to change and having someone in the room who can change it.',
+      'AI coding tools give that engineer the leverage a whole team used to need. The constraint is no longer hands on keyboards. It is knowing which step to change and having someone in the room who can change it. You know the work. We know what software can now do. That is the whole partnership.',
       'Never9 gives organizations the effect of an embedded product and engineering team without hiring one first, and without the overhead a traditional consultancy bills for.',
     ],
   },
@@ -100,12 +108,12 @@ const pageCopy = {
       'Reporting and visibility tools',
       'Data intake and process orchestration',
       'AI agents that do one specific job',
-      'Products incubated from a client workflow',
+      'Products launched from a workflow one company fixed first',
     ],
   },
   contact: {
     title: 'Bring the problem, not a spec',
-    body: 'Our team includes founders who built companies on large venture rounds and multi-year timelines. We have seen what deliberation costs. If your team is working around software that does not fit, or you have a workflow problem that others in your industry share, we will sit down, diagnose it, and tell you what we would build.',
+    body: 'Our team includes founders who built companies on large venture rounds and multi-year timelines. We have seen what deliberation costs, and we know how cheap the build has become. If your team is working around software that does not fit, or you have a workflow problem others in your industry share, we will sit down, diagnose it, and tell you what we would build, and whether it should stay yours or become a company.',
     cta: 'Start a Conversation',
   },
 };
@@ -232,6 +240,17 @@ export default function Page() {
               <h3 className="mt-2 text-lg font-semibold text-ink">{step.title}</h3>
               <p className="mt-3 text-sm leading-7 text-ink/70">{step.body}</p>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="shared" className="mt-20 rounded-3xl border border-ink/12 bg-white/78 p-8 md:p-10">
+        <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-ink md:text-4xl">
+          {pageCopy.shared.title}
+        </h2>
+        <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
+          {pageCopy.shared.points.map((point) => (
+            <p key={point}>{point}</p>
           ))}
         </div>
       </section>
