@@ -39,7 +39,7 @@ const projects: Project[] = [
   {
     name: 'Stealth consulting build',
     model: 'Embedded engagement',
-    summary: 'Built on contract for a founding team with a launch date.',
+    summary: 'Built on contract with a founding team in the ag space.',
     detail:
       'An embedded engagement, currently in stealth. Never9 is building the platform and shaping the go-to-market plan alongside the founders. The product, the code, and the company remain the property of the founders.',
     stealth: true,
