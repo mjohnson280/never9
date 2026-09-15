@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Rapid Contract Development | Never9',
   description:
-    'Rapid contract development from Never9. An embedded engineer sits inside your organization, diagnoses the workflow problem off-the-shelf software cannot fix, and builds the custom solution.',
+    'Rapid contract development from Never9, a rapid development studio and incubator. An embedded engineer sits inside your organization, finds the workflow problem, and builds the custom fix in weeks. You own it.',
   alternates: {
     canonical: '/rapid-contract-development',
   },
@@ -24,7 +24,7 @@ const pillars = [
   },
   {
     title: 'We re-engineer the workflow, not the tool',
-    body: 'Layering a tool onto the existing flow captures a fraction of the value. We redesign the workflow around what software can now do, name the step worth changing, and write requirements tight enough to build from. The problem does not have to be expensive. It has to be persistent.',
+    body: 'Months spent bending an off-the-shelf tool to fit is where the real cost hides. We redesign the workflow around what software can now do, name the step worth changing, and write requirements tight enough to build from. The problem does not have to be expensive. It has to be persistent.',
   },
   {
     title: 'We help you get to market, or operate more efficiently within it',
@@ -85,14 +85,15 @@ export default function RapidContractDevelopment() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
             Never9 Engagements
           </p>
-          <h1 className="max-w-3xl text-4xl font-semibold leading-tight text-ink md:text-6xl">
+          <h1 className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-ink md:text-6xl">
             Rapid contract development, embedded in your workflow
           </h1>
           <p className="max-w-3xl text-lg leading-8 text-ink/74">
-            Never9 embeds an engineer inside your organization. We sit alongside the people doing
-            the work, find the workflow problem off-the-shelf software cannot fix, and build the
-            custom solution. You own it. We help you get to market, or operate more efficiently
-            within it.
+            Never9 is a rapid development studio and incubator. This is the contract side. We embed
+            an engineer inside your organization, sit alongside the people doing the work, find the
+            workflow problem, and build the custom fix in weeks. For founders, we tie the build to a
+            full go-to-market plan. You own the code, the accounts, and the advantage. We help you
+            get to market, or operate more efficiently within it.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -182,7 +183,7 @@ export default function RapidContractDevelopment() {
 
       <section className="mt-20 rounded-3xl border border-ink/12 bg-white/78 p-8 md:p-10">
         <h2 className="max-w-3xl text-3xl font-semibold text-ink md:text-4xl">
-          Why an embedded engineer beats another tool
+          Why an experienced operator gets you over the line faster
         </h2>
         <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
           <p>
@@ -209,7 +210,9 @@ export default function RapidContractDevelopment() {
         <p className="mt-4 max-w-2xl text-sm leading-7 text-white/85">
           If your team is working around software that does not fit, we can diagnose the workflow in
           a single working session and tell you what we would build. It does not have to be an
-          expensive problem. No full spec required.
+          expensive problem. No full spec required. And if the fix turns out to be one your whole
+          industry needs, we will say so, and talk about whether it should stay yours or become a
+          company.
         </p>
         <a
           href="/contact"
