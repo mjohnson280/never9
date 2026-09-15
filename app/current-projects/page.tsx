@@ -47,7 +47,7 @@ const projects: Project[] = [
   {
     name: 'Stealth legal platform',
     model: 'Incubated product',
-    summary: 'A second legal platform, in stealth.',
+    summary: 'Legal platform',
     detail:
       'Another workflow problem shared across law firms, being built in lockstep with the people who live it every day. Details when it ships.',
     stealth: true,
