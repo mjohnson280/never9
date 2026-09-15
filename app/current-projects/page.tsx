@@ -31,9 +31,9 @@ const projects: Project[] = [
   {
     name: 'Fit Vaulted',
     model: 'Incubated product',
-    summary: 'Running analytics built on an athlete’s own training data.',
+    summary: 'A normalized fitness measure for runners and their coaches.',
     detail:
-      'A personal running-analytics system built from a runner’s own Garmin data, with an access layer so a coach sees the same record the athlete does. Training decisions come from what actually happened, not a generic plan. In development.',
+      'Developed in concert with a running coach to fix a fitness measurement problem. The result is a normalized fitness measure that adjusts every run for route, terrain, weather, pace, and distance. Athlete and coach see the same transparent picture of what actually changed, or did not, to help maximize the training plan for each runner.',
     href: 'https://fitvaulted.com',
   },
   {
