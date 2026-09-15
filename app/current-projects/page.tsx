@@ -86,7 +86,7 @@ export default function CurrentProjects() {
             key={project.name}
             className="flex flex-col rounded-3xl border border-ink/10 bg-white/78 p-8"
           >
-            <div className="flex h-14 items-center">
+            <div className="flex h-14 items-center justify-center">
               {project.logo ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
