@@ -164,7 +164,7 @@ export default function Page() {
 
       <section className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-6">
-          <h1 className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-ink md:text-5xl">
+          <h1 className="max-w-4xl text-balance text-5xl font-semibold leading-tight text-ink md:text-6xl">
             {pageCopy.hero.title}
           </h1>
           <p className="max-w-3xl text-lg leading-8 text-ink/74">{pageCopy.hero.body}</p>
