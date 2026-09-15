@@ -58,7 +58,7 @@ Never9 is the launchpad for every incubated project. `/incubate-project` (`.clau
 - **Dependencies:** `resend`
 
 ## Roadmap
-- **Consulting / rapid contract development statement** — shipped 2026-09-10 as a dedicated page plus homepage section (see Pages). Copy is a first draft for Matt to review. The client (Spider Ag, `C:\Users\mjohn\Desktop\Projects\spiderag`) is deliberately not named on the site; add a case study only with the client's OK.
+- **Consulting / rapid contract development statement** — shipped 2026-09-10 as a dedicated page plus homepage section (see Pages). Copy aligned to the studio-and-incubator positioning and approved by Matt 2026-09-14. The client (Spider Ag, `C:\Users\mjohn\Desktop\Projects\spiderag`) is deliberately not named on the site; add a case study only with the client's OK.
 
 ## TODOs — Remind Matt
 - **Rotate Resend API key** — current key was exposed in chat (2026-04-09). Delete it in Resend, create a new one, update `.env.local` and Vercel env vars (production + preview)
