@@ -34,6 +34,7 @@ The connective tissue is **embedded engineering** (the forward-deployed engineer
 Reference point Matt named: Blank Metal (blankmetal.ai, Minneapolis, "anti-consultancy", small senior teams, 90-day production guarantee, outcomes-aligned pricing). Adapted the shape, not the copy. Voice: plain, declarative, anti-deliberation, no consultant jargon. Avoid claiming a specific day-count guarantee or any pricing/free-build terms unless Matt sets them. **Do not use the "engineer owns whether it works in production" framing**; Matt cut it on 2026-09-10 because it did not read clearly.
 
 ## Pages
+- **Site header** is one shared component, `app/components/SiteHeader.tsx`, rendered from `app/layout.tsx` above every page (added 2026-09-15). Left: the Never9 pill, links home. Right: Consulting (`/rapid-contract-development`), Current Projects, About Never9 (`/what-does-never9-mean`), and the Start a Conversation button (`/contact`); the current page is highlighted via `usePathname`. Pages carry no top padding or back links of their own; the header owns the top spacing. Add nav items there, not on individual pages.
 - `/` — homepage (`app/page.tsx`); all copy lives in the `pageCopy` object at the top of the file
 - `/rapid-contract-development` — consulting arm / rapid contract development page (added 2026-09-10; SEO target: "rapid contract development"). Linked from the homepage header nav ("Consulting"), a homepage section between "why now" and solution types, and the footer Work column.
 - `/how-we-work`, `/what-does-never9-mean`, `/current-projects`, `/contact`
