@@ -69,16 +69,7 @@ const fits = [
 
 export default function RapidContractDevelopment() {
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-24 pt-12 md:pt-16">
-      <div className="flex flex-wrap items-center gap-3">
-        <a href="/" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
-          Back to home
-        </a>
-        <span className="text-ink/35">|</span>
-        <a href="/contact" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
-          Start a conversation
-        </a>
-      </div>
+    <main className="mx-auto max-w-6xl px-6 pb-24">
 
       <section className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-6">

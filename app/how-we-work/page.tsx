@@ -87,16 +87,7 @@ const outcomes = [
 
 export default function HowWeWork() {
   return (
-    <main className="mx-auto max-w-3xl px-6 pb-20 pt-12 md:pt-16">
-      <div className="flex flex-wrap items-center gap-3">
-        <a href="/" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
-          Back to home
-        </a>
-        <span className="text-ink/35">|</span>
-        <a href="/contact" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
-          Start a conversation
-        </a>
-      </div>
+    <main className="mx-auto max-w-3xl px-6 pb-20">
 
       <article className="mt-8 rounded-3xl border border-ink/12 bg-white/80 p-8 md:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getSiteUrl } from './lib/site';
+import SiteHeader from './components/SiteHeader';
 import './globals.css';
 
 const siteUrl = getSiteUrl();
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <SiteHeader />
         {children}
 
         <footer className="mx-auto max-w-6xl border-t border-ink/10 px-6 pb-10 pt-12">

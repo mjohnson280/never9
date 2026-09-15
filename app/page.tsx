@@ -1,9 +1,5 @@
 // Edit copy in this object. Layout/styles are kept below.
 const pageCopy = {
-  header: {
-    brand: 'Never9',
-    cta: 'Start a Conversation',
-  },
   hero: {
     title: 'Get to market, or operate more efficiently within it.',
     body: 'Never9 is a rapid development studio and incubator. We sit inside your organization as an embedded engineer, find the workflow problem, and build the custom fix fast. We can build it for you and tie it to a full go-to-market plan. Or, when the problem is one your whole industry shares, we incubate the solution with you under the Never9 umbrella. Either way, we will help you get to market, or operate more efficiently within it.',
@@ -163,39 +159,7 @@ export default function Page() {
   const deploymentStamp = getDeploymentStamp();
 
   return (
-    <main className="mx-auto max-w-6xl px-6 pb-24 pt-10 md:pt-16">
-      <header className="flex items-center justify-between">
-        <p className="inline-flex rounded-full border border-ink/10 bg-white/75 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-ink/70">
-          {pageCopy.header.brand}
-        </p>
-        <nav className="flex items-center gap-5">
-          <a
-            href="/rapid-contract-development"
-            className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
-          >
-            Consulting
-          </a>
-          <a
-            href="/current-projects"
-            className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
-          >
-            Current Projects
-          </a>
-          <a
-            href="/what-does-never9-mean"
-            className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60 transition hover:text-ink"
-          >
-            About Never9
-          </a>
-          <a
-            href="/contact"
-            className="rounded-full border border-ink/20 bg-white/85 px-5 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:border-ink/40"
-          >
-            {pageCopy.header.cta}
-          </a>
-        </nav>
-      </header>
-
+    <main className="mx-auto max-w-6xl px-6 pb-24">
       <section className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-6">
           <h1 className="max-w-4xl text-balance text-5xl font-semibold leading-tight text-ink md:text-6xl">
