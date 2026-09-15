@@ -22,10 +22,10 @@ const pageCopy = {
     ],
   },
   problem: {
-    title: 'Code is cheap now. Solved problems are not.',
+    title: 'The build is not the expensive part anymore. Spinning your wheels is.',
     points: [
       'Most teams run on SaaS built for the average case. The gaps get filled with spreadsheets, manual handoffs, and workarounds nobody owns. The problem does not have to be expensive to be worth fixing. It has to be persistent.',
-      'When building software was expensive, buying off the shelf and living with the gaps was the rational call. It is not anymore. A small senior team can build a custom fix in weeks for less than the workarounds cost in a year. The value is no longer in the code. It is in the problem the code solves.',
+      'The real cost is the months spent bending an off-the-shelf tool to fit, only to find it harder to implement than building the right thing would have been. That math has flipped. A small senior team can now build a custom fix around your actual workflow in weeks, for less than the workarounds cost in a year. The value is in the problem solved, not in the code.',
       'Layering AI or another tool onto an existing workflow captures a fraction of the value. The far larger return comes when the workflow itself is redesigned around what software can now do. Do not adapt the work to the tool. Redesign the work around what is now possible. Never9 is built around that shift.',
     ],
   },
@@ -90,11 +90,11 @@ const pageCopy = {
     ],
   },
   whyNow: {
-    title: 'Code got cheap. Knowing what to build did not.',
+    title: 'Why an experienced operator gets you over the line faster',
     points: [
       'The biggest gains from AI come from redesigning the workflow around it, not from dropping it into the existing one. The open question inside most companies is who actually drives that change. The answer that works is an engineer embedded in the function, starting fresh from how the work should happen.',
       'AI coding tools give that engineer the leverage a whole team used to need. The constraint is no longer hands on keyboards. It is knowing which step to change and having someone in the room who can change it. You know the work. We know what software can now do. That is the whole partnership.',
-      'Never9 gives organizations the effect of an embedded product and engineering team without hiring one first, and without the overhead a traditional consultancy bills for.',
+      'That is where the reps matter. Never9 is run by an operator who has taken companies from napkin to exit more than once and has sat in the seat where deliberation costs the most. We know which problems are worth solving, what a first version has to leave out, and how to get a team using the real thing in weeks. You get the effect of an embedded product and engineering team without hiring one first, and without the overhead a traditional consultancy bills for.',
     ],
   },
   solutionTypes: {
@@ -113,7 +113,7 @@ const pageCopy = {
   },
   contact: {
     title: 'Bring the problem, not a spec',
-    body: 'Our team includes founders who built companies on large venture rounds and multi-year timelines. We have seen what deliberation costs, and we know how cheap the build has become. If your team is working around software that does not fit, or you have a workflow problem others in your industry share, we will sit down, diagnose it, and tell you what we would build, and whether it should stay yours or become a company.',
+    body: 'Our team includes founders who built companies on large venture rounds and multi-year timelines. We have seen what deliberation costs, and we have gone from napkin to exit enough times to know how to skip it. If your team is working around software that does not fit, or you have a workflow problem others in your industry share, we will sit down, diagnose it, and tell you what we would build, and whether it should stay yours or become a company.',
     cta: 'Start a Conversation',
   },
 };
@@ -164,7 +164,7 @@ export default function Page() {
 
       <section className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-6">
-          <h1 className="max-w-3xl text-5xl font-semibold leading-tight text-ink md:text-7xl">
+          <h1 className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-ink md:text-5xl">
             {pageCopy.hero.title}
           </h1>
           <p className="max-w-3xl text-lg leading-8 text-ink/74">{pageCopy.hero.body}</p>

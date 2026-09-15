@@ -186,16 +186,19 @@ export default function RapidContractDevelopment() {
         </h2>
         <div className="mt-6 space-y-4 text-sm leading-7 text-ink/72">
           <p>
-            Code is cheap now. When it was expensive, buying off the shelf and adapting inside it
-            was the rational call. Today a custom fix built around your actual workflow costs less
+            The build is not the expensive part anymore. Spinning your wheels is: months bending an
+            off-the-shelf tool to fit, only to find it harder to implement than building the right
+            thing would have been. Today a custom fix built around your actual workflow costs less
             than the workarounds it replaces, and the biggest gains come from redesigning the
             workflow around what software can now do, not from adding tools to the existing one.
             The open question inside most companies is who drives that change. The answer that works is an engineer embedded in the function.
             AI-assisted development gives that engineer the leverage a whole team used to need.
           </p>
           <p>
-            Our team includes founders who built companies the old way, on large venture rounds and
-            multi-year timelines. Never9 engagements are structured to avoid that: a diagnosis first,
+            Never9 is run by an operator who has taken companies from napkin to exit more than
+            once, including the old way, on large venture rounds and multi-year timelines. That is
+            what gets you over the line quickly: knowing which problems are worth solving and what
+            a first version has to leave out. Never9 engagements are structured around it: a diagnosis first,
             a fixed-scope build, a real launch date, and ownership that stays with the client.
           </p>
         </div>

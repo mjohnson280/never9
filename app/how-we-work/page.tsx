@@ -102,7 +102,7 @@ export default function HowWeWork() {
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
           How We Work
         </p>
-        <h1 className="mt-3 text-4xl font-semibold leading-tight text-ink md:text-5xl">
+        <h1 className="mt-3 text-balance text-4xl font-semibold leading-tight text-ink md:text-5xl">
           Get to market, or operate more efficiently within it.
         </h1>
         <p className="mt-5 text-base leading-8 text-ink/74">
@@ -115,7 +115,7 @@ export default function HowWeWork() {
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold text-ink">
-            Code is cheap now. Solved problems are not.
+            The build is not the expensive part anymore. Spinning your wheels is.
           </h2>
           <div className="mt-4 space-y-4 text-sm leading-8 text-ink/74">
             <p>
@@ -124,11 +124,14 @@ export default function HowWeWork() {
               fit the software instead of the other way around.
             </p>
             <p>
-              When building software was expensive, that was the rational call. It is not anymore.
-              A small senior team can build a custom fix in weeks for less than the workarounds cost
-              in a year. The value is no longer in the code. It is in the problem the code solves,
-              and in knowing which problem to solve. That is why we embed instead of quoting: the
-              people doing the work know the problem, and we know what software can now do.
+              The real cost is the months spent bending an off-the-shelf tool to fit, only to find it
+              harder to implement than building the right thing would have been. That math has
+              flipped. A small senior team can now build a custom fix around the actual workflow in
+              weeks, for less than the workarounds cost in a year. The value is in the problem
+              solved, and in knowing which problem to solve. That is why we embed instead of quoting:
+              the people doing the work know the problem, and we know what software can now do. And
+              because we have taken companies from napkin to exit more than once, we know what a
+              first version has to leave out to get over the line.
             </p>
             <p>
               Layering AI or another tool onto an existing workflow captures a fraction of the value.
