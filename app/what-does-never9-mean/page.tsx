@@ -6,11 +6,7 @@ export const metadata = {
 
 export default function WhatDoesNever9Mean() {
   return (
-    <main className="mx-auto max-w-3xl px-6 pb-20 pt-12 md:pt-16">
-      <a href="/" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
-        Back to home
-      </a>
-
+    <main className="mx-auto max-w-3xl px-6 pb-20">
       <article className="mt-8 rounded-3xl border border-ink/12 bg-white/80 p-8 md:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ember">
           Never9 Origin

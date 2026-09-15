@@ -73,11 +73,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-6 pb-20 pt-12 md:pt-16">
-      <a href="/" className="text-xs font-semibold uppercase tracking-[0.2em] text-ink/60">
-        Never9
-      </a>
-
+    <main className="mx-auto max-w-3xl px-6 pb-20">
       <section className="mt-8 rounded-3xl border border-ink/12 bg-white/80 p-8 shadow-glow">
         <h1 className="max-w-2xl text-3xl font-semibold leading-tight text-ink md:text-4xl">
           Tell us the problem. We&apos;ll tell you what we&apos;d build.
