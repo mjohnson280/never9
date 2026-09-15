@@ -118,6 +118,40 @@ const pageCopy = {
   },
 };
 
+const iconProps = {
+  viewBox: '0 0 24 24',
+  fill: 'none',
+  stroke: 'currentColor',
+  strokeWidth: 1.75,
+  strokeLinecap: 'round' as const,
+  strokeLinejoin: 'round' as const,
+  className: 'h-5 w-5',
+  'aria-hidden': true,
+};
+
+// One icon per paragraph in pageCopy.problem.points, in order:
+// the gap workarounds fill, the cost math that flipped, the workflow redesigned.
+const problemIcons = [
+  <svg key="gap" {...iconProps}>
+    <rect x="3" y="3" width="7" height="7" rx="1.5" />
+    <rect x="14" y="3" width="7" height="7" rx="1.5" />
+    <rect x="3" y="14" width="7" height="7" rx="1.5" />
+    <rect x="14" y="14" width="7" height="7" rx="1.5" strokeDasharray="2.5 2.5" />
+  </svg>,
+  <svg key="scale" {...iconProps}>
+    <path d="M12 3v18" />
+    <path d="M7 21h10" />
+    <path d="M4 7h16" />
+    <path d="M7 7l-3.5 7a3.5 3.5 0 0 0 7 0L7 7z" />
+    <path d="M17 7l-3.5 7a3.5 3.5 0 0 0 7 0L17 7z" />
+  </svg>,
+  <svg key="route" {...iconProps}>
+    <circle cx="6" cy="19" r="3" />
+    <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+    <circle cx="18" cy="5" r="3" />
+  </svg>,
+];
+
 function getDeploymentStamp(): string {
   const env = process.env.VERCEL_ENV ?? process.env.NODE_ENV ?? 'unknown';
   const branch = process.env.VERCEL_GIT_COMMIT_REF ?? 'local';
@@ -206,11 +240,14 @@ export default function Page() {
         <h2 className="max-w-3xl text-3xl font-semibold leading-tight text-ink md:text-4xl">
           {pageCopy.problem.title}
         </h2>
-        <div className="mt-6 grid gap-4 text-sm leading-7 text-ink/72 md:grid-cols-2">
+        <div className="mt-8 space-y-7">
           {pageCopy.problem.points.map((point, index) => (
-            <p key={point} className={index === 2 ? 'md:col-span-2' : undefined}>
-              {point}
-            </p>
+            <div key={point} className="flex items-start gap-5">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ember/10 text-ember">
+                {problemIcons[index]}
+              </span>
+              <p className="max-w-3xl text-sm leading-7 text-ink/72">{point}</p>
+            </div>
           ))}
         </div>
       </section>

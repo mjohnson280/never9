@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Current Projects | Never9',
   description:
-    'Products incubated by Never9, each built in lockstep with a stakeholder who lived the workflow problem. DockItFlo: PACER notice calendaring for litigation firms.',
+    'Products incubated or built by Never9, each one started as a workflow problem inside a real business. DockItFlo, Fit Vaulted, and two projects in stealth.',
 };
 
 type Project = {
@@ -22,18 +22,34 @@ const projects: Project[] = [
     model: 'Incubated product',
     summary: 'PACER notice calendaring for litigation attorneys.',
     detail:
-      'Developed in concert with a large litigation firm to fix an inefficient workflow: court notices arriving by email, read by hand, and keyed into calendars one deadline at a time. DockItFlo reads the notice, extracts the dates, and writes them to the attorney\u2019s calendar with a human in the loop. Built against the firm\u2019s real docket, then released to the industry as a Never9 company.',
+      'Developed in concert with a large litigation firm to fix an inefficient workflow. The result is fully automated, AI-driven date extraction and calendaring from court notices arriving by email, with human-in-the-loop confirmation. Built against the firm’s real docket, with a release to the industry coming as partners.',
     href: 'https://dockitflo.com',
     logo: '/dockitflo-wordmark.png',
     logoWidth: 1024,
     logoHeight: 150,
   },
   {
-    name: 'Next project',
-    model: 'In development',
-    summary: 'Built in lockstep with a stakeholder who lived the problem.',
+    name: 'Fit Vaulted',
+    model: 'Incubated product',
+    summary: 'Running analytics built on an athlete’s own training data.',
     detail:
-      'Details when it ships. Every Never9 product starts as a workflow problem inside a real business, identified by the people doing the work.',
+      'A personal running-analytics system built from a runner’s own Garmin data, with an access layer so a coach sees the same record the athlete does. Training decisions come from what actually happened, not a generic plan. In development.',
+    href: 'https://fitvaulted.com',
+  },
+  {
+    name: 'Stealth consulting build',
+    model: 'Embedded engagement',
+    summary: 'Built on contract for a founding team with a launch date.',
+    detail:
+      'An embedded engagement, currently in stealth. Never9 is building the platform and shaping the go-to-market plan alongside the founders. The product, the code, and the company remain the property of the founders.',
+    stealth: true,
+  },
+  {
+    name: 'Stealth legal platform',
+    model: 'Incubated product',
+    summary: 'A second legal platform, in stealth.',
+    detail:
+      'Another workflow problem shared across law firms, being built in lockstep with the people who live it every day. Details when it ships.',
     stealth: true,
   },
 ];
@@ -56,10 +72,11 @@ export default function CurrentProjects() {
           Current Never9 Projects
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-8 text-ink/70">
-          Products incubated by Never9. Each one started as a workflow problem inside a real
-          business, shared by the rest of that industry, and built in lockstep with the stakeholder
-          who lived it. Some are ours. Some are shared. All of them exist to get someone to market,
-          or to help them operate more efficiently within it.
+          Products incubated or built by Never9. Each one started as a workflow problem inside a
+          real business, shared by the rest of that industry, and built in lockstep with the
+          stakeholder who lived it. Some are ours. Some are shared. Some belong to the founders we
+          built them with. All of them exist to get someone to market, or to help them operate
+          more efficiently within it.
         </p>
       </div>
 
