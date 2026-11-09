@@ -50,6 +50,18 @@ Ignore everything else: `.credentials.json`, session transcripts (`projects\*\*.
 
 The routine is the same as for the projects: pull `.claude` before a session, push after. Don't run sessions on both machines at the same time, or the two memories will conflict. Avoid OneDrive or Dropbox for the live `.claude` folder; they sync mid-write and lock files.
 
+**Set up 2026-11-09 as `mjohnson280/claude-config` (private).** The `.gitignore` in `.claude` is a whitelist, so new caches and transcripts stay out by default. The first commit was scanned with gitleaks; the only hit was a reminder ID in a DockFlow memory note, not a key. Because the auto memory includes personal notes, this repo must never be made public or given collaborators.
+
+To bring it onto a new machine, run `claude` once so `.claude` exists, then in `C:\Users\mjohn\.claude`:
+```
+git init -b main
+git remote add origin https://github.com/mjohnson280/claude-config.git
+git fetch origin
+git checkout -f main
+git branch -u origin/main
+```
+This leaves the new machine's credentials and caches in place and lays the tracked files over them.
+
 Fallback if you don't want a repo: treat one machine as primary, and copy `.claude\projects\*\memory\` and `CLAUDE.md` across whenever you switch for more than a day.
 
 ## 4. Before retiring a machine
