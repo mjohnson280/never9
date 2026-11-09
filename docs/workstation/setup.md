@@ -48,7 +48,7 @@ Claude's own files don't sync by themselves. Without the step below, each machin
 
 Ignore everything else: `.credentials.json`, session transcripts (`projects\*\*.jsonl`), `cache`, `history.jsonl`, `file-history`, `telemetry`, `shell-snapshots`, `session-env`, `paste-cache`, `plugins`, `state`, `backups`, `ide`, `sessions`, and the device-ID files.
 
-The routine is the same as for the projects: pull `.claude` before a session, push after. Don't run sessions on both machines at the same time, or the two memories will conflict. Avoid OneDrive or Dropbox for the live `.claude` folder; they sync mid-write and lock files.
+The routine is the same as for the projects: pull `.claude` before a session, push after. Different projects at the same time are fine, on one machine or two, because each project has its own memory folder and pushes rebase cleanly. Don't run the same project in two sessions at once, or its memory will conflict. Avoid OneDrive or Dropbox for the live `.claude` folder; they sync mid-write and lock files.
 
 **Set up 2026-11-09 as `mjohnson280/claude-config` (private).** The `.gitignore` in `.claude` is a whitelist, so new caches and transcripts stay out by default. The first commit was scanned with gitleaks; the only hit was a reminder ID in a DockFlow memory note, not a key. Because the auto memory includes personal notes, this repo must never be made public or given collaborators.
 
