@@ -5,6 +5,7 @@ One subfolder per thing this repo owns. The folder names the role, not the brand
 | Folder | What lives here |
 |---|---|
 | `site/` | The never9.ai website: positioning, copy decisions, page notes. |
+| `workstation/` | Matt's machine across every project: what lives outside git, setting up a computer, syncing Claude Code config between two. |
 | `launchpad/` | The incubation toolkit (`scripts/new-project.mjs`, `templates/`, the `/incubate-project` skill) and its productized successor, **Joist** (working name; may become Joist Kit). |
 
 Conventions:
