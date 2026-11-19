@@ -122,13 +122,18 @@ run("vercel", ["link", "--yes", "--project", vercelProject, "--scope", team], di
 run("vercel", ["git", "connect", "--yes"], dir, { allowFail: true });
 run("vercel", ["deploy", "--prod", "--yes"], dir);
 run("vercel", ["domains", "add", domain, "--scope", team], dir, { allowFail: true });
-run("vercel", ["domains", "add", `www.${domain}`, "--scope", team], dir, { allowFail: true });
+// A subdomain (hq.never9.ai) gets no www twin; its DNS record is named for the subdomain label.
+const isSubdomain = domain.split(".").length > 2;
+if (!isSubdomain) run("vercel", ["domains", "add", `www.${domain}`, "--scope", team], dir, { allowFail: true });
+const dnsNote = isSubdomain
+  ? `add at the parent domain's DNS host: A ${domain.split(".").slice(0, -2).join(".")} 76.76.21.21`
+  : "add: A @ 76.76.21.21 and A www 76.76.21.21";
 
 console.log(`
 Done.
   Folder    ${dir}
   GitHub    https://github.com/${owner}/${repo}
   Vercel    project ${vercelProject} in ${team} (https://${vercelProject}.vercel.app)
-  Domain    ${domain} attached. If DNS is elsewhere, add: A @ 76.76.21.21 and A www 76.76.21.21
+  Domain    ${domain} attached. If DNS is elsewhere, ${dnsNote}
   Supabase  not created. Follow .claude/skills/incubate-project/SKILL.md.
 `);
